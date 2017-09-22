@@ -1,0 +1,140 @@
+﻿@charset 'UTF-8';
+.clearfix:after{
+  content: "";
+  display: block;;
+  clear: both;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.no-ml{
+  margin-left: 0;
+}
+body {
+  width: 100%;
+  max-width: 640px;
+  min-width: 300px;
+  margin:0 auto;
+}
+.banner img{
+  display: block;
+  width: 100%;
+}
+.s1{
+  padding: 20px 0 10px;
+}
+.s1-dl{
+  width:70%;
+  margin:0 auto;
+  border:1px solid #ff787f;
+  border-radius: 5px;
+}
+.s1-dl dd{
+  width:50%;
+  height: 30px;
+  font-size: 16px;
+  color:#ff787f;
+  text-align: center;
+  line-height: 30px;
+}
+.s1-dl dd:first-child{
+  background: #ff787f;
+  color: #fff;
+}
+.s1-ul{
+  width:90%;
+  margin:0 auto;
+}
+.s1-li{
+  width:45%;
+  margin-top: 10px;
+}
+.s1-li img{
+  display: block;
+  width: 100%;
+}
+.s1-txt{
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  line-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.s1-txt span{
+  color: #ff787f;
+}
+.s2{
+  padding:15px 0;  
+  background: url(../images/yd_04.jpg) no-repeat center;
+  background-size: cover;
+}
+.iframe-wrapper{
+  height: 120px;
+}
+.s2-txt{
+   font-size:16px;
+  color: #fff;
+  text-align: center;
+}
+.s2-txt span{
+  color: #fed22b;
+}
+.s3-title img{
+    display: block;
+  width: 100%;
+}
+.s3-sel{
+  padding:10px 0 3px;
+  background: url(../images/yd_05.jpg) no-repeat center;
+  background-size: cover;
+}
+.s3-li{
+    width: 90%;
+    background: #fff;
+    margin: 10px auto;
+    padding: 10px 10px 20px;
+    position: relative;
+}
+/*向下的三角*/
+.s3-trib{
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 14px 14px 0 14px;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  left:50%;
+  margin-left: -14px;
+  bottom:-12px;
+}
+/*向下的三角*/
+.s3-subt{
+  font-size:16px;
+  color: #f24750;
+  line-height: 40px;
+  border-bottom: 1px solid #ebebeb;
+}
+.s3-select span{
+  margin-left: 10px;
+  font-size: 15px;
+}
+.s3-select p{
+  display: inline-block;
+  width: 45%;
+  margin-top: 10px;
+}
+.s4 .iframe-wrapper{
+  margin-top:20px;
+}
+.copyright {
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  padding: 10px 0;
+}
