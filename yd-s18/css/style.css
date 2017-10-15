@@ -1,0 +1,478 @@
+﻿@charset 'UTF-8';
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.no-ml{
+  margin-left:0!important;
+}
+.no-mt{
+  margin-top:0!important;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+body{
+  width:6.4rem;
+  margin:0 auto;
+}
+header{
+  height: 0.6rem;
+  background: #000000 url(../images/yd_01.png) no-repeat 0.2rem center;
+  background-size: 4.05rem;
+}
+.banner{
+  height: 3.9rem;
+  background: url(../images/yd_02.jpg) no-repeat top;
+  background-size: cover;
+  padding: 0.8rem 0;
+}
+.banner p{
+  font-size: 0.5rem;
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+}
+.banner p span{
+  color: #d32338;
+  font-weight: bold;
+}
+.ban-btns{
+  padding: 0 1.2rem;
+  margin-top: 0.6rem;
+}
+.ban-btns a{
+    display: block;
+    width: 1.80rem;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 0.4rem;
+}
+.ban-btn1{
+  border:1px solid rgb( 255, 255, 255 );
+  color: rgb( 255, 255, 255 );
+}
+.ban-btn2{
+  border:1px solid #d32338;
+  color: #d32338;
+}
+.iframe-container1{
+    background: #eeeeee;
+    padding-top: 10px;
+    height: 150px;
+}
+.s1{
+  width: 100%;
+  background:url(../images/yd_05.png) no-repeat bottom;
+  background-size: cover;
+  padding: 0.2rem 0.1rem;
+}
+.s-titl{
+    font-size: 0.4rem;
+    color: rgb( 0, 0, 0 );
+    font-weight: bold;
+    line-height: 0.8rem;
+    text-align: center;
+    background: url(../images/yd_03.png) no-repeat bottom;
+    background-size: 5rem;
+}
+.s-titl span{
+  color: #d32338;
+}
+.s1-pic{
+  margin-top: 0.2rem;
+}
+.s1-pic img{
+  width: 100%;
+}
+.s-btn{
+    display: block;
+    width: 2.6rem;
+    margin: 0 auto;
+    background-color: rgb( 0, 0, 0 );
+    font-size: 0.26rem;
+    color: rgb( 255, 255, 255 );
+    line-height: 0.5rem;
+    text-align: center;
+    margin-top: 0.24rem;
+}
+.s2{
+  background: url(../images/yd_07.jpg) no-repeat center;
+  background-size: cover;
+  padding-bottom: 0.2rem;
+}
+.s2-subt{
+    font-size: 0.24rem;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.4rem;
+    padding: 0.1rem 0.4rem;
+}
+.s2-subt span{
+  color: #d41111;
+  font-weight: bold;
+}
+.s2-deadline{
+    font-size: 0.4rem;
+    color: #d32338;
+    font-weight: bold;
+    line-height: 0.6rem;
+    text-align: center;
+}
+.s2-time{
+  text-align: center;
+  position: relative;
+  margin-top: 0.1rem;
+}
+.s2-time span{
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.64rem;
+  border-radius: 5px;
+  background-color: rgb( 255, 255, 255 );
+  box-shadow: 1px 1.732px 2px 0px rgb( 4, 0, 0 );
+  font-size: 0.6rem;
+  color: rgb( 0, 0, 0 );
+  font-weight: bold;
+  text-align: center;
+  line-height:  1.4rem;
+}
+.s2-time em{
+  display: block;
+  position: absolute;
+  width: 1.1rem;
+  height: 0.5rem;
+  background: url(../images/yd_06.png) no-repeat top;
+  background-size: contain;
+  font-size: 0.22rem;
+  color: rgb( 1, 1, 1 );
+  line-height: 0.5rem;
+  text-align: center;
+      top: 1.2rem;
+}
+.en-month{
+      left: 1.84rem;
+}
+.en-date{
+      left: 3.4rem;
+}
+.s2-p1{
+  width: 4rem;
+  border-bottom: 1px solid #000;
+  margin:0.1rem auto;
+  font-size: 0.2rem;
+  color: rgb( 0, 0, 0 );
+  line-height: 0.5rem;
+  text-align: center;
+}
+.s2-btns{
+  padding: 0 1.07rem;
+  margin-top: 0.2rem;
+}
+.s2-btns a{
+  display: block;
+  width: 1.95rem;
+  height: 0.43rem;
+  background-color: rgb( 0, 0, 0 );
+  font-size: 0.2rem;
+  color: rgb( 255, 255, 255 );
+  line-height:0.43rem;
+  text-align: center;
+}
+.s2-p2{
+  font-size: 0.2rem;
+  color: rgb( 212, 17, 17 );
+  line-height:0.5rem;
+  text-align: center;
+}
+.s3{
+  background: url(../images/yd_08.jpg) no-repeat center;
+  background-size:cover;
+  padding: 0.2rem 0 0.5rem;
+}
+.s3-titl{
+  color: #fff;
+  background: url(../images/yd_09.png) no-repeat bottom;
+  background-size: 5.72rem;
+}
+.s3-ul{
+  padding: 0 0.5rem;
+  margin-top: 0.2rem;
+}
+.s3-li{
+  width: 2.6rem;
+  background-color: rgba( 255, 255, 255,0.7);
+  padding:0.08rem;
+  margin-top: 0.2rem;
+}
+.s3-div{
+  width: 2.46rem;
+  border: 2px solid rgb( 0, 0, 0 );
+  background-color: rgba( 255, 255, 255,0.7);
+  margin: 0 auto;
+  padding: 0.1rem 0.1rem 0.25rem;
+}
+.s3-div h3{
+  width: 1.6rem;
+  border-bottom: 1px solid #000;
+  margin:0 auto;
+  font-size: 0.28rem;
+  color: rgb( 0, 0, 0 );
+  font-weight: bold;
+  line-height: 0.5rem;
+  text-align: center;
+}
+.s3-div h4{
+  font-size: 0.22rem;
+  color: rgb( 211, 35, 56 );
+  font-weight: bold;
+  line-height: 0.46rem;
+  text-align: center;
+}
+.s3-div p{
+    height: 1.9rem;
+    font-size: 0.22rem;
+    color: rgb( 0, 0, 0 );
+    line-height: 0.3rem;
+    text-align: left;
+}
+.s3-btn{
+  width: 1.5rem;
+  background: #d32338;
+  color: #fff;
+  line-height: 0.4rem;
+}
+.s4{
+  padding: 0.25rem 0 0.5rem;
+  background:#fff url(../images/yd_10.png) no-repeat bottom;
+  background-size: contain;
+}
+.s4-div{
+  width: 3.8rem;
+  margin:1.4rem auto 0;
+  background-color: rgb( 255, 255, 255 );
+  border: 1px solid rgb( 211, 35, 56 );
+  padding:1.0rem 0.15rem 0.25rem;
+  position: relative;
+}
+.s4-div h3{
+   font-size: 0.3rem;
+  color: rgb( 6, 1, 24 );
+  font-weight: bold;
+  line-height: 0.6rem;
+  text-align: center;
+}
+.s4-div p{
+  font-size: 0.24rem;
+  color: #060118;
+  line-height: 0.36rem;
+}
+.s4-btn{
+  width: 1.96rem;
+  line-height: 0.52rem;
+  background: #d32338;
+}
+.s4-portrait{
+  display:block;
+  width: 1.86rem;
+  height: 1.86rem;
+  border-radius: 50%;
+  border: 1px solid red;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.93rem;
+  top: -1.0rem;
+  overflow: hidden;
+}
+.s4-portrait img{
+  width: 100%;
+}
+.s5{
+  background:url(../images/yd_14.jpg) no-repeat center;
+  background-size: cover;
+  padding: 0.3rem 0 0.4rem;
+}
+.s5 h3{
+    font-size: 0.3rem;
+    color: rgb( 255, 255, 255 );
+    font-weight: bold;
+    line-height: 0.6rem;
+    text-align: center;
+}
+.s5-ul{
+  padding: 0 0.65rem;
+}
+.s5-li{
+  width: 1.3rem;
+  float: left;
+  margin:0.2rem 0 0 0.6rem;
+}
+.s5-sch{
+  width: 1.3rem;
+  height: 1.6rem;
+}
+.s5-sch img{
+  width: 100%;
+}
+.s5-li p{
+  width: 2.1rem;
+  margin-left: -0.4rem;
+  font-size: 0.22rem;
+  color: rgb( 255, 255, 255 );
+  line-height:0.36rem;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.s5-btn{
+  background: #d32338;
+}
+.s6{
+  padding-bottom: 0.3rem;
+}
+.s6-titl{
+    line-height: 0.6rem;
+    padding: 0.2rem 0 0.1rem;
+}
+.s6-pic{
+  width: 4.7rem;
+  height: 1.92rem;
+  margin:0.3rem auto 0.2rem;
+}
+.s6-pic img{
+  width: 100%;
+}
+.s6-info{
+  width: 4.7rem;
+  margin:0 auto;
+}
+.s6-info-titl{
+    font-size: 0.24rem;
+  color: rgb( 0, 0, 0 );
+  line-height: 0.32rem;
+  text-align: left;
+  font-weight: bold;
+}
+.s6-info-titl dt{
+  width: 4.4rem;
+  padding-left: 0.4rem;
+  background:url(../images/yd_25.jpg) no-repeat left center;
+  background-size: 0.22rem;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+}
+.s6-info-titl dd{
+  width: 0.2rem;
+  float: right;
+}
+/*滚动信息css start*/
+#demo {
+  margin-top: 0.2rem;
+}
+#demo dl {
+  font-size: 0.24rem;
+  line-height: 30px;
+}
+#demo dl dt{
+   width: 3.4rem;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   color: rgb( 0, 0, 0 );
+   float: left;
+}
+#demo dl dd{
+  color: #f68517;
+  float: right;
+}
+/*滚动信息css ending*/
+.s7{
+  height: 3.14rem;
+  background:url(../images/yd_26.jpg) no-repeat center;
+  background-size: contain;
+  padding-top: 0.2rem;
+}
+.s8{
+  height: 2.48rem;
+}
+.s8 img{
+  width: 100%;
+}
+.s9{
+  padding: 0.2rem 0;
+  background:url(../images/yd_27.jpg) no-repeat center;
+  background-size: cover;
+}
+.s9-pic{
+  width: 3.33rem;
+  height: 1.8rem;
+  margin: 0 auto;
+}
+.s9-pic img{
+  width: 100%;
+}
+.iframe-container2{
+  height: 130px;
+}
+footer{
+  background:#333333;
+  margin-bottom: 60px;
+}
+footer p{
+    font-size: 0.22rem;
+    color: #fff;
+    text-align: center;
+    padding: 0.1rem 0;
+}
+/*底部滚动信息*/
+.fot-scroll {
+  width: 6.4rem;
+  background:#ccc;
+  border: 1px solid #ccc;
+  height: 60px;
+  position: fixed;
+  left: 50%;
+  margin-left: -3.2rem;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+.fot-scroll #div1{
+ height:60px;
+ overflow:hidden;
+}
+.fot-scroll #div1 a{
+ display:block;/*这个属性是必须的*/
+ font-size:14px;
+ line-height:60px;
+ text-decoration:none;
+ color:#333;
+ font-family:Arial;
+ width: 3.6rem;
+ padding-left: 10px;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ box-sizing: border-box;
+}
+.fot-btn {
+  position: absolute;
+  right: 10px;
+  top:10px;
+  width: 2rem;
+  display: block;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #d32338;
+  font-size: 14px;
+  color: rgb( 255, 255, 255 );
+  line-height: 40px;
+  text-align: center;
+}
+/*底部滚动信息*/

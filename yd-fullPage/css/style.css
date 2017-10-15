@@ -1,0 +1,40 @@
+﻿@charset 'UTF-8';
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.no-ml{
+  margin-left:0!important;
+}
+.no-mt{
+  margin-top:0!important;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+html,body{
+  height: 100%;
+}
+body{
+  width:6.4rem;
+  margin:0 auto;
+  position: relative;
+}
+.swiper-container{
+ height: 100%;
+}
+.swiper-slide{
+  height: 100%;
+  border: 1px solid red;
+}
+.swiper-pagination-bullet{
+  background: #a05b5b;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background: #fff;
+}
