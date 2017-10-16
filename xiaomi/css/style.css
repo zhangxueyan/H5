@@ -1,0 +1,72 @@
+﻿.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.no-ml{
+	margin-left: 0!important;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/*animate css设置延迟时间*/
+.s-step1{
+	    -webkit-animation-delay: 0.01s;
+	    -ms-animation-delay: 0.01s;
+	    -o-animation-delay: 0.01s;
+	    -moz-animation-delay: 0.01s;
+	    animation-delay: 0.01s;
+}
+.s-step2{
+		-webkit-animation-delay: 1s;
+	    -ms-animation-delay: 1s;
+	    -o-animation-delay: 1s;
+	    -moz-animation-delay: 1s;
+	    animation-delay: 1s;
+}
+.s-step3{
+		-webkit-animation-delay: 1.5s;
+	    -ms-animation-delay: 1.5s;
+	    -o-animation-delay: 1.5s;
+	    -moz-animation-delay: 1.5s;
+	    animation-delay: 1.5s;
+}
+.s-step4{
+		-webkit-animation-delay: 2s;
+	    -ms-animation-delay: 2s;
+	    -o-animation-delay: 2s;
+	    -moz-animation-delay: 2s;
+	    animation-delay: 2s;
+}
+.container{
+	width: 1226px;
+	margin:0 auto;
+}
+.xm-top{
+	display: block;
+	height: 120px;
+	background: #264693  url(../images/xm_01.jpg) no-repeat center;
+	background-size: 1226px;
+}
+nav{
+	background: #333;
+	height: 40px;
+	padding: 12px 0;
+}
+.nav-menu{
+	width: 610px;
+	float: left;
+}
+.nav-menu a{
+	color: #b0b0b0;
+	font-size: 12px;
+	border-left: 1px solid #424242;
+	padding: 0 5px;
+	float: left;
+}
+.nav-menu a:first-child{
+	border:none;
+}
