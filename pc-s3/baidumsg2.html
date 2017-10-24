@@ -1,0 +1,127 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <base href="http://chat2432.talk99.cn/chat/">
+    <title></title>  
+    <link href="http://static.soperson.com/cfile/talk99/160327/styles/formData.css?16121601" rel="stylesheet">
+    <script type="text/javascript" src="http://static.soperson.com/cfile/talk99/160327/../../../default/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="http://static.soperson.com/cfile/talk99/160327/scripts/form.js?161216"></script>
+    <script type="text/javascript">
+
+        var config = {
+            propName:{label:"姓名",visible:1,required:1,type:"input",solid:1,order:1,rule:"name"},
+            propGender:{label:"性别",visible:0,required:0,type:"radio",option:[{label:"男",value:1},{label:"女",value:2}],solid:1,order:3},
+            propPhone:{label:"固定电话",visible:0,required:0,type:"input",rule:"phone",solid:1,order:4},
+            propMobile:{label:"手机",visible:1,required:1,type:"input",rule:"mobile",solid:1,order:2},
+            propQq:{label:"QQ",visible:0,required:0,type:"input",rule:"qq",solid:1,order:5},
+            propMsn:{label:"微信",visible:0,required:0,type:"input",rule:"email",solid:1,order:6},
+            propEmail:{label:"电子邮件",visible:0,required:0,type:"input",rule:"email",solid:1,order:7},
+            propColumn0:{label:"自定义字段一",visible:0,required:0,order:8},
+            propColumn1:{label:"自定义字段二",visible:0,required:0,order:9},
+            propColumn2:{label:"自定义字段三",visible:0,required:0,order:10},
+            propColumn3:{label:"自定义字段四",visible:0,required:0,order:11},
+            propColumn4:{label:"自定义字段五",visible:0,required:0,order:12},
+            propColumn5:{label:"自定义字段六",visible:0,required:0,order:13},
+            propColumn6:{label:"自定义字段七",visible:0,required:0,order:14},
+            propColumn7:{label:"自定义字段八",visible:0,required:0,order:15},
+            propColumn8:{label:"自定义字段九",visible:0,required:0,order:16},
+            propColumn9:{label:"自定义字段十",visible:0,required:0,order:17}
+        };
+        var data = null;
+        
+
+        window.onload = function () {
+            writeForm(config, data, false, '');
+        }
+    </script>
+</head>
+<body >
+<div class="wrapper ">
+    <form action="form?c=10039888&conf=8956&cmd=save" method="post"
+          target="_self" onkeydown="if(event.keyCode==13){submitData();return false;}">
+        <input type="hidden" name="redirect" value="">
+        <input type="hidden" name="pos" value="">
+        <input type="hidden" name="page" value="">
+
+        <div id="formRegion">
+
+        </div>
+    </form>
+</div>
+<a class="submit" onclick="trData()">免费获取学历提升方案</a>
+<style type="text/css">
+    html, body{overflow-y: hidden;font-family: "微软雅黑";}
+   .item-required{display:none!important;} 
+   .form-item-over{background:none !important;}  
+   .form-error-msg{display:none!important;}
+   .form-text{outline:none!important;}
+   .btn-submit{display: none!important;}
+   .form-item{ margin-top: 5px!important; line-height: 30px; text-align: center; }
+   .form-label{display: none!important;}
+   .form-text{ width: 90%!important; height: 50px; border: 1px solid #a19a9a;
+    padding-left: 20px;box-sizing:border-box;}
+   .form-element{ margin-left: 0px!important ;display:inline;}
+   .item-required{display:none!important;} 
+   .form-item-over{background:none !important;}  
+   .form-error-msg{background:none!important;} 
+   .form-error{display:none!important;}
+   .form-text,.submit{margin-top: 30px !important;}
+   .form-text{border-radius: 30px!important;font-size: 18px;color: #666;}
+   .submit{width: 90%!important;height: 50px; line-height:50px; display: block;margin: 0 auto;text-align: center;cursor:pointer;border-radius: 30px!important;background: #ffa91a;
+    color: #fff;font-size: 18px;}
+</style>
+<script type="text/javascript">
+   function extend(){
+    $("#submitItem .btn-submit").html("免费获取落户积分政策");
+    $("#item_name input").attr("placeholder","输入您的姓名");
+    $("#item_mobile input").attr("placeholder","输入您的联系电话");
+}
+window.onload = function(){
+    writeForm(config, true, '');
+    extend();
+};
+</script>
+<script type="text/javascript">
+    function extend(){
+        var id = document.getElementById("formRegion");
+        if(id){
+            var n = $('input[name=name]');
+            var m = $('input[name=mobile]');
+            var params = "您的姓名";
+            var param = "您的手机号";
+            n.val(params);
+            m.val(param);
+            n.focusin(function(){n.val("")}).focusout(function(){if(n.val() == "")n.val(params)});
+            m.focusin(function(){m.val("")}).focusout(function(){if(m.val() == "")m.val(param)});
+
+        }
+    }
+    window.onload = function(){
+        writeForm(config);
+        extend();
+    };
+    function trData(){
+       var mobile=document.getElementsByName("mobile")[0].value;
+       check_mobile=/^(((1[0-9][0-9]{1}))+\d{8})$/;
+       if(!mobile){ alert("对不起，手机选项不能为空!");return false;}
+       if(!(check_mobile.test(mobile)))
+       {
+           alert("请您输入正确的手机号");
+           return false;
+       }
+       submitData();  
+   }
+</script>
+</body>
+</html>

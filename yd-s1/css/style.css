@@ -1,0 +1,582 @@
+﻿@charset 'UTF-8';
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+body {
+  width: 10rem;
+  margin:0 auto;
+  padding-bottom: 1.2rem;
+}
+.banner {
+  width: 100%;
+  height: 6.09375rem;
+  background: url(../images/yd_01.jpg) no-repeat center;
+  background-size: contain;
+  padding: 0.9375rem 0.3125rem 0;
+  position: relative;
+}
+.banner h2 {
+ width: 7.828125rem;
+ height: 0.90625rem;
+ background-color: rgba( 5, 5, 5,0.5 );
+ font-size: 0.53125rem;
+ color: rgb( 255, 216, 0 );
+ font-weight: bold;
+ line-height: 0.90625rem;
+ text-align: center;
+ margin-left: 1.5625rem;
+}
+.banner-cates{
+  text-align:right;
+  margin-top: 0.375rem;
+  padding-right: 0.390625rem;
+}
+.banner-cates span{
+  font-size:0.375rem;
+  color: rgb( 255, 255, 255 );
+  line-height: 0.3125rem;
+  text-align: center;
+  border-left: 1px solid #fff;
+  padding: 0 0.15625rem;
+}
+.banner-cates span:first-child{
+  border-left: none;
+}
+.banner-endline{
+  width: 3.59375rem;
+  padding-left: 0.546875rem;
+  font-size: 0.34375rem;
+  color: rgb( 255, 255, 255 );
+  text-align: left;
+  margin: 0.8rem 0 0 5.78125rem;
+  background: url(../images/yd_02.png) no-repeat left center;
+  background-size: 0.4375rem 0.4375rem;
+}
+.banner-endline span{
+  color: #f2c04b;
+}
+.banner-dl  {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.banner-dl dd{
+  width: 25%;
+  font-size: 0.3125rem;
+  color: rgb( 255, 255, 255 );
+  line-height: 0.78125rem;
+  text-align: center;
+  float: left;
+}
+
+.s0{
+  padding: 0 0.3125rem 0.15625rem;
+  border-bottom: 0.546875rem solid #eeeeee;
+}
+.s0-li{
+  margin-top: 0.3125rem;
+}
+.s0-li img{
+  display: block;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-size: contain;
+  float: left;
+}
+.s0-text{
+  width: 8.28125rem;
+  border-bottom: 1px solid #e8e8ea;
+  float: right;
+  padding-bottom: 0.21875rem;
+  position: relative;
+}
+.s0-p1 {
+   font-size: 0.3125rem;
+   color: rgb( 3, 3, 3 );
+}
+.s0-p2 {
+  font-size: 0.3125rem;
+  color: rgba( 3, 3, 3, 0.702 );
+}
+.s0-msg {
+  display: block;
+  width: 0.46875rem;
+  height: 0.46875rem;
+  border-radius: 50%;
+  background-color: rgb( 244, 88, 33 );
+  font-size: 0.3125rem;
+  color: rgb( 255, 255, 255 );
+  line-height: 0.46875rem;
+  text-align: center;
+  position: absolute;
+  right: 0.09375rem;
+  top: 0.390625rem;
+}
+.s0-msg:before{
+    content: "现在";
+    display: block;
+    width: 0.9375rem;
+    font-size: 0.3125rem;
+    color: rgba( 3, 3, 3, 0.702 );
+    line-height: 0.234375rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.46875rem;
+    top: -0.46875rem;
+    line-height: 0.46875rem;
+}
+.s-main {
+  padding: 0.3125rem 0.3125rem 0;
+}
+.s-title {
+  font-size: 0.3125rem;
+  color: rgb( 3, 3, 3 );
+  padding-left: 1.09375rem;
+  position: relative;
+}
+.s-icon {
+  display: block;
+  width: 0.84375rem;
+  height: 0.84375rem;
+  position: absolute;
+  left: 0;
+  top:0;
+}
+.s1-icon {
+  background: url(../images/yd_07.png) no-repeat center;
+  background-size: contain;
+}
+.s2-icon {
+    background: url(../images/yd_09.png) no-repeat center;
+  background-size: contain;
+}
+.s3-icon {
+      background: url(../images/yd_11.png) no-repeat center;
+  background-size: contain;
+}
+.s4-icon {
+        background: url(../images/yd_13.png) no-repeat center;
+  background-size: contain;
+}
+.s5-icon {
+         background: url(../images/yd_16.png) no-repeat center;
+  background-size: contain; 
+}
+.s6-icon {
+           background: url(../images/yd_20.png) no-repeat center;
+  background-size: contain; 
+}
+.s7-icon {
+           background: url(../images/yd_22.png) no-repeat center;
+  background-size: contain; 
+}
+.s8-icon {
+           background: url(../images/yd_24.png) no-repeat center;
+  background-size: contain; 
+}
+.s9-icon {
+           background: url(../images/yd_26.png) no-repeat center;
+  background-size: contain; 
+}
+.s10-icon {
+           background: url(../images/yd_30.png) no-repeat center;
+  background-size: contain; 
+}
+.s-dots {
+  font-size: 0.46875rem;
+  line-height: 0.84375rem;
+  color: #000;
+  width: 0.46875rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.s1-pic {
+  width: 9.375rem;
+  height: 3.25rem;
+  background:url(../images/yd_08.jpg) no-repeat center;
+  background-size: contain;
+  margin-top: 0.3125rem;
+  position: relative;
+}
+.s1-date {
+  width: 100%;
+  font-size: 0.4375rem;
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0.3125rem;
+}
+.s1-end{
+  font-size: 0.3125rem;
+}
+.s1-brief {
+font-size: 0.3125rem;
+color: rgb( 0, 0, 0 );
+text-align: center;
+line-height: 0.625rem;
+margin: 0.3125rem 0 0; 
+}
+.s1-brief span{
+  color: #ff0000;
+}
+.s-details {
+  font-size: 0.34375rem;
+  color: rgb( 35, 132, 211 );
+  font-weight: bold;
+  line-height: 0.890625rem;
+  text-align: center;
+  border-top: 1px solid #e8e8ea;
+  margin-top: 0.46875rem;
+}
+.s-apply {
+  width: 100%;
+  height: 0.78125rem;
+  background-color: rgb( 238, 238, 238 );
+   font-size: 0.3125rem;
+   color: rgba( 0, 0, 0, 0.6 );
+   text-align: center;
+  line-height:0.625rem;
+}
+
+.s2-pic {
+  display: block;
+  width: 100%;
+  height: 3.25rem;
+  margin: 0.3125rem auto 0;
+}
+.s2-brief {
+font-size: 0.3125rem;  
+color: rgb( 0, 0, 0 );
+text-align: center;
+margin-top: 0.3125rem;
+line-height: 0.625rem;
+}
+.s-btns {
+  padding: 0 0.3125rem;
+}
+.s-btns a {
+  display:block;
+  width: 2.796875rem;
+  height: 0.5625rem; 
+  border-radius: 0.078125rem;
+  font-size: 0.3125rem;
+  line-height: 0.5625rem;
+  text-align: center;
+  float: left;
+  margin: 0.390625rem 0 0 0.15625rem;
+  overflow: hidden;
+}
+.s2-btns a {
+    color: rgb( 33, 132, 213 );
+    border: 1px solid rgb( 33, 132, 213 );
+}
+.s3-btns a {
+    color: #d6a74b;
+    border: 1px solid #d6a74b;
+}
+.no-ml{
+  margin-left: 0!important;
+}
+.s4-btns a{
+  display: block;
+  width: 2.046875rem;
+  height: 0.578125rem;
+  background-color: rgb( 90, 198, 171 );
+  border-radius: 0.046875rem;
+   font-size: 0.3125rem;
+  color: rgb( 255, 255, 255 );
+  line-height: 0.578125rem;
+  text-align: center;
+  float: left;
+  margin: 0.390625rem 0 0 0.234375rem;
+}
+.s5-pic {
+  width: 100%;
+  height: 6.96875rem;
+  background-color: rgb( 76, 199, 232 );
+  margin-top: 0.3125rem; 
+}
+.s5-subt {
+  width: 100%;
+  height: 1.71875rem;
+  background:url(../images/yd_15.png) no-repeat center;
+  background-size:7.65625rem 1.140625rem;
+}
+.s5-img {
+  width: 100%;
+  height: 3.28125rem;
+  padding-top: 2.34375rem;
+}
+.s5-img1{
+background:url(../images/yd_17.jpg) no-repeat center;
+background-size: 100%;
+}
+.s5-img2{
+background:url(../images/yd_18.jpg) no-repeat center;
+background-size: 100%;
+}
+.s5-img3{
+background:url(../images/yd_19.jpg) no-repeat center;
+background-size: 100%;
+}
+.s5-img p {
+  font-size: 0.21875rem;
+  color: rgb( 255, 255, 255 );
+  line-height: 0.375rem;
+  text-align: center;
+}
+
+.s5-txt{
+  font-size: 0.21875rem;
+  color: rgb( 244, 98, 17 );
+  text-align: center;
+  background:#fff;
+  padding: 0.15625rem 0;
+}
+
+.swiper-container1 .swiper-slide.active .s5-img{
+   border: 3px solid #fff;
+}
+.s5-input {
+  display: block;
+  width: 7.484375rem;
+  height: 0.625rem;
+  border: 1px solid rgb( 201, 201, 201 );
+  border-radius: 0.046875rem;
+  font-size: 0.21875rem;
+  color: rgba( 86, 86, 86, 0.8 );
+  line-height: 0.625rem;
+  text-align: center;
+  margin: 0.3125rem  auto 0;
+}
+.s5-free {
+    height: 0.734375rem;
+    background-color: rgb( 75, 199, 230 );
+    font-size: 0.34375rem;
+    color: rgb( 255, 255, 255 );
+    line-height: 0.734375rem;
+    margin-bottom: 0.3125rem;
+}
+.s6-pic {
+  width: 100%;
+  height: 4.484375rem;
+  background:url(../images/yd_21.jpg) no-repeat center;
+    background-size: contain;
+  margin-top: 0.3125rem;
+  padding-top: 1.09375rem;
+  position: relative;
+}
+.s6-p1{
+  font-size: 0.625rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.s6-p1 span{
+  font-size: 44px;
+  color: rgb( 254, 201, 4 );
+}
+.s6-p2 {
+  width: 100%;
+  background-color: rgba( 0, 0, 0,0.3);
+  padding:0.46875rem;
+  font-size: 0.3125rem;
+  color: rgb( 255, 255, 255 );
+  line-height:0.46875rem;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.s7-pic{
+  width: 100%;
+  height: 3.25rem;
+  background:url(../images/yd_23.jpg) no-repeat center;
+  background-size: contain;
+  margin-top: 0.3125rem;
+  padding-left: 0.3125rem;
+}
+.s7-p1{
+  font-size: 0.65625rem;
+  color: rgb( 255, 255, 255 );
+  line-height: 1.40625rem;
+  text-align:left;
+  position: relative;
+}
+.s7-p1:before{
+  content: "";
+  width: 1.21875rem;
+  height: 0.1875rem;
+  background: #fd9b00;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.s7-p1:after{
+  content: "";
+  width: 5.625rem;
+  height: 0.03125rem;
+  background: #fd9b00;
+  position: absolute;
+  left: 0;
+  bottom: 0.078125rem;
+}
+.s7-p2{
+  font-size: 0.4375rem;
+  color: rgb( 255, 255, 255 );
+  line-height: 1.0rem;
+  text-align:left;
+}
+.s7-p3{
+  font-size: 0.34375rem;
+  color: rgb( 255, 255, 255 );
+  line-height: 0.84375rem;
+  text-align:left;
+}
+.s8-free {
+  background: #ff485e;
+}
+.s9-pic{
+    width: 100%;
+    height: 3.515625rem;
+    background: url(../images/yd_27.jpg) no-repeat center;
+    background-size: contain;
+    margin-top: 0.3125rem;
+}
+.s9-p1 {
+  font-size: 0.78125rem;
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+  font-weight: bold;
+  line-height: 2.1875rem;
+}
+.s9-p2{
+  font-size: 0.3125rem;
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+  padding-bottom: 0.3125rem;
+  background: url(../images/yd_35.png) no-repeat bottom;
+  background-size: 2.78125rem 0.234375rem;
+  margin-top: 0.3125rem;
+}
+.s9-grade{
+  display: block;
+  width: 100%;
+  margin-top: 0.15625rem;
+}
+.s9-apply{
+  height: 0.3125rem;
+  margin-top: 0.15625rem;
+}
+.s10-li {
+  width: 2.09375rem;
+  padding-top: 1.640625rem;
+  margin-top: 0.546875rem;
+  float: left;
+  margin-left: 0.3125rem;
+}
+.s10-li p{
+  text-align: center;
+}
+.s10-li1 {
+  background:url(../images/yd_31.png) no-repeat top;
+  background-size: 2.09375rem 2.09375rem;
+}
+.s10-li2 {
+  background:url(../images/yd_32.png) no-repeat top;
+  background-size: 2.09375rem 2.09375rem;
+}
+.s10-li3 {
+  background:url(../images/yd_33.png) no-repeat top;
+  background-size: 2.09375rem 2.09375rem;
+}
+.s10-li4 {
+  background:url(../images/yd_34.png) no-repeat top;
+  background-size: 2.09375rem 2.09375rem;
+}
+.s10-p1 {
+  background-color: rgba( 0, 0, 0,0.502);
+  font-size: 0.3125rem;
+  color: rgb( 255, 255, 255 );
+
+}
+.s10-p2 {
+    width: 1.8rem;
+    height: 0.5625rem;
+    border: 1px solid rgb( 27, 132, 218 );
+    border-radius: 0.046875rem;
+    font-size: 0.3125rem;
+    color: rgb( 36, 130, 207 );
+    line-height: 0.5625rem;
+    margin: 0.234375rem auto 0;
+}
+.s10-p4{
+  background: rgb( 27, 132, 218 );
+  color: #fff;
+}
+.s10-p5{
+  width: 1.875rem;
+  font-size: 0.3125rem;
+  line-height: 0.625rem;
+  color: rgb( 131, 131, 131 );
+  margin:0.15625rem 0!important;
+  border-top: 1px dashed #ccc;
+}
+.s11 {
+  font-size: 0.375rem;
+  color: #000;
+  line-height: 0.625rem;
+  text-align: center;
+}
+/*底部滚动信息*/
+.fot-scroll {
+  width: 10rem;
+  background:#ccc;
+  border: 1px solid #ccc;
+  height: 60px;
+  position: fixed;
+  left: 50%;
+  margin-left: -5rem;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+.fot-scroll #div1{
+ height:60px;
+ overflow:hidden;
+}
+.fot-scroll #div1 a{
+ display:block;/*这个属性是必须的*/
+ font-size:14px;
+ line-height:60px;
+ text-decoration:none;
+ color:#333;
+ font-family:Arial;
+ width: 6rem;
+ padding-left: 0.3125rem;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ box-sizing: border-box;
+}
+.fot-btn {
+  position: absolute;
+  right: 0.3125rem;
+  top:10px;
+  width: 3.125rem;
+  display: block;
+  height: 40px;
+  border-radius: 0.078125rem;
+  background-color:skyblue;
+  font-size: 14px;
+  color: rgb( 255, 255, 255 );
+  line-height: 40px;
+  text-align: center;
+}

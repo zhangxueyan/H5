@@ -1,0 +1,145 @@
+.clearfix:after{content: "";display: block;clear: both;}
+body{padding-bottom: 30px;}
+/*nav导航部分*/
+.nav2 {
+	width: 100%;
+	height: 50px;
+	background: #1f232e;
+}
+.nav2 ul {
+	list-style: none;
+}
+.navUl {
+	width: 100%;
+}
+.navUl a {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navUl li.navli {
+	float: left;
+	height: 50px;
+	padding: 0 28px;
+	line-height: 50px;
+	position: relative;
+	z-index: 3;
+}
+.navUl li:hover {
+	text-decoration: underline;
+	background: #000;
+}
+.navli a {
+	font-size: 16px;
+}
+.slideDown {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	display: none;
+	z-index: 2;
+	background: rgba(31,35,46,0.8);
+	overflow: hidden;
+	width: 137px;
+}
+.slideDown ul li {
+	font-size: 12px;
+}
+.slideDown ul li a {
+	padding: 0 20px;
+}
+.slideDown ul li:hover {
+	background: rgba(0,0,0,0.8);
+}
+.slideDown ul li {
+	height: 36px;
+	line-height: 36px;
+}
+.slideDown ul li a {
+	font-size: 12px;
+}
+.lino3 .slideDown {
+	width: 139px;
+}
+.lino4 .slideDown {
+	width: 174px;
+}
+.lino5 .slideDown {
+	width: 152px;
+}
+.lino6 .slideDown {
+	width: 164px;
+}
+.inner {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+a:hover {
+	color: #ffff00;
+}
+.content{
+	width: 100%;
+}
+.content img{
+	display: block;
+	margin:0 auto;
+}
+.content-main{
+	width: 1420px;
+	margin: 0 auto;
+}
+/*自动日期更新*/
+.time{
+	position: relative;
+	height: 293px;
+	background: url(../images/sh_06.jpg) no-repeat center;
+}
+.time span{
+	display: block;
+	color: #f8f300;
+	font-size: 75px;
+	width: 156px;
+	text-align: center;
+	height: 170px;
+	line-height: 137px;
+	position: absolute;
+}
+.month{
+	left: 525px;
+}
+.day{
+	left: 745px;
+}
+/*底部固定留电话部分*/
+.bot-fixed{
+	width: 100%;
+	height: 80px;
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding: 10px 0;
+	box-sizing: border-box;
+}
+.bot-main {
+	width: 1000px;
+	margin: 0 auto;
+}
+.bot-text {
+	float: left;
+	font-size: 20px;
+	color: #fff;
+	line-height: 30px;
+}
+.bot-plan{
+	color: yellow;
+}
+.bot-msg {
+	width: 600px;
+	height: 45px;
+	float: left;
+	margin: 10px 0 0 40px;
+}

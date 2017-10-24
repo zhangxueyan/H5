@@ -1,0 +1,150 @@
+﻿@charset 'UTF-8';
+body {
+  width: 100%;
+  max-width: 640px;
+  min-width: 300px;
+  margin:0 auto;
+}
+.banner img{
+  display: block;
+  width: 100%;
+}
+.s1{
+  width: 90%;
+  margin:0 auto;
+}
+.s1 .s1-titl{
+  margin-top: 20px;
+}
+.s1-titl{
+  font-size: 18px;
+  color: #ff0000;
+  line-height: 40px;
+}
+.attend{
+  height: 40px;
+  position: relative;
+}
+.attend em{
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  left: 0;
+  top:20px;
+}
+.attend p{
+  width: 75%;
+  background: #fff;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top:0;
+  -webkit-transform:translateX(-50%);
+  -moz-transform:translateX(-50%);
+  -ms-transform:translateX(-50%);
+  transform:translateX(-50%);
+  overflow:hidden;
+}
+.attend span{
+  color:red;
+}
+/*选择部分css*/
+.title {
+  font-size: 16px;
+ line-height: 45px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.title span{
+  font-size: 24px;
+  color:#f85959;
+  vertical-align: middle; 
+}
+.select span{
+  margin-left: 10px;
+  font-size: 16px;
+}
+.select p{
+  display: inline-block;
+  width: 40%;
+}
+p.select6-item5{
+  width: 100%;
+}
+.item-mt {
+  margin-top: 3.125%;
+}
+/*选择部分css ending*/
+.iframe-wrapper{
+  height: 130px;
+}
+.iframe-wrapper2{
+  margin-top:20px;
+}
+.s2 {
+  width: 90%;
+  margin:0 auto;
+  padding: 0 0  10px;
+}
+.s2-titl{
+  width: 40%;
+  height: 40px;
+  margin:0 auto;
+  border:1px solid rgb( 248, 89, 89 );
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  line-height: 40px;
+}
+.s2-subt {
+    font-size: 20px;
+  color: #000;
+   text-align: center;
+  line-height: 50px;
+}
+.s2-dead {
+      font-size: 16px;
+  color: #000;
+   text-align: center;
+}
+.s2-time {
+  text-align: center;
+  margin-top:20px;
+}
+.s2-time span{
+  display: inline-block;
+  border:1px solid rgb( 248, 89, 89 );
+  width: 20%;
+ line-height: 40px;
+ font-size: 20px;
+ text-align: center;
+ margin-right: 5px;
+}
+.s2-btn {
+  display: block;
+  width: 50%;
+  height: 40px;
+  background: #f85959;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  margin:20px auto;
+}
+.s-detail {
+    text-indent: 2em;
+    line-height: 24px;
+    margin: 10px 0 10px;
+    font-size: 14px;
+}
+
+.copyright {
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  margin-top: 10px;
+}

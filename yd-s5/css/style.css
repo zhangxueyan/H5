@@ -1,0 +1,76 @@
+﻿@charset 'UTF-8';
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+body{
+  max-width: 640px;
+  min-width: 300px;
+  height: auto;
+  margin: 0px auto;
+  padding-bottom:50px;
+}
+.content{
+  cursor: pointer;
+}
+.content img{
+  width: 100%;
+  display: block;
+}
+.s-11{
+  font-size: 16px;
+  background: #696868;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+/*底部滚动信息*/
+.fot-scroll {
+  max-width: 640px;
+  min-width: 300px;
+  width: 100%;
+  background:#ccc;
+  height: 60px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+.fot-scroll #div1{
+ height:60px;
+ overflow:hidden;
+}
+.fot-scroll #div1 a{
+ display:block;/*这个属性是必须的*/
+ font-size:14px;
+ line-height:60px;
+ text-decoration:none;
+ color:#000;
+ font-family:Arial;
+ width: 60%;
+ padding-left: 20px;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ box-sizing: border-box;
+}
+.fot-btn {
+  position: absolute;
+  right: 20px;
+  top:10px;
+  width: 31.25%;
+  display: block;
+  height: 40px;
+  border-radius: 5px;
+  background-color:skyblue;
+  font-size: 14px;
+  color: rgb( 255, 255, 255 );
+  line-height: 40px;
+  text-align: center;
+}
