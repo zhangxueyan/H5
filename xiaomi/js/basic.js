@@ -37,26 +37,20 @@
         prevButton: '.swiper-button-prev',
         autoplayDisableOnInteraction : false
     })
-
-
-    //mock data test
-    // Mock.mock('http://api.com', {
-    //     "nav-item|1": [{
-    //         'name': '@cname',   //中文名称
-    //         'age|1-100': 100,   //100以内随机整数
-    //         'birthday': '@date("yyyy-MM-dd")',  //日期
-    //         'city': '@city(true)'   //中国城市
-    //     }]
-    // });
-    //JQuery方式
-    // $.ajax({
-    //     url: 'http://api.com',
-    //     dataType: 'json'
-    // }).done(function(data, status, xhr) {
-    //     console.log(
-    //         JSON.stringify(data, null, 4)
-    //     )
-    // });
+    //s2鼠标经过显示对应的内容
+    var $s2_tabs = $(".s2-tabs");
+    var $s2_tab = $s2_tabs.find("a");
+    var $slide = $(".swiper-container3").find(".swiper-slide");
+    var mySwiper3 = new Swiper ('.swiper-container3', {
+     effect : 'fade'
+    })
+     $s2_tab.mouseenter(function(){
+        var $item = $(this);
+        $s2_tab.removeClass("active")
+        $item.addClass("active")
+        var idx = $item.index();
+        mySwiper3.slideTo(idx, 1000, false);//切换到第一个slide，速度为1秒
+      })
   })
 
 

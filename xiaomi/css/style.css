@@ -421,3 +421,73 @@ left: -587px;
     right: 0;
     top: 23px;
 }
+.site-s1{
+	margin-top: 50px;
+}
+.s1-titl{
+	position: absolute;
+	line-height: 1;
+}
+.site-s2{
+	background: #f5f5f5;
+}
+.s2-bar{
+	width: 214px;
+	height: 614px;
+}
+.s2-bar img{
+	height: 614px;
+}
+.swiper-container3{
+	width: 980px;
+	height: 614px;
+	float: right;
+}
+.s2-li{
+	width: 234px;
+	height: 300px;
+	background: #ffffff;
+	float: left;
+	margin: 10px 0 0 10px;
+}
+.s2-li a{
+	padding-top: 25px;
+}
+.s2-li p{
+    color: #333;
+	text-align: center;
+	line-height: 30px;
+}
+.s2-name{
+	font-size: 14px;
+}
+.s2-desc{
+	font-size: 12px;
+}
+.s2-price{
+	font-size: 14px;
+}
+.s2-li img{
+	width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.s2-tabs{
+	position: absolute;
+	right: 0;
+    top: -40px;
+	z-index: 2;
+}
+.s2-tabs a{
+    width: 60px;
+    height: 40px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+}
+.s2-tabs a.active{
+	color: red;
+}
+.s2-div{
+	position: relative;
+}
