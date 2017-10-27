@@ -3,8 +3,7 @@ window.onload=function(){
         el: '#app',
         data: {
            message: 'Hello',
-           obj:'',
-           isShowFull:false
+           obj:''
         },
        created:function(){
          var url="https://zhangxueyan.github.io/private/xiaomi/data.json";
@@ -12,20 +11,9 @@ window.onload=function(){
            url:url,
            dataType:"json",
            success:function(result){
-            vm.obj = result.nav;
+            vm.obj = result
            }
           });
-        },
-        methods:{
-          // nav
-          showNavChild:function(item){
-            item.isShow= true
-            this.isShowFull = true
-          },
-          HideNavChild:function(item){
-            item.isShow= false
-            this.isShowFull = false
-          }
         }
       })
 }

@@ -1,0 +1,75 @@
+﻿@charset 'UTF-8';
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.no-ml{
+  margin-left:0!important;
+}
+.no-mt{
+  margin-top:0!important;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+body{
+  width:6.4rem;
+  margin:0 auto;
+}
+.s-btn{
+  width: 5.8rem;
+  border-radius: 0.1rem;
+  background:#f85959 url(../images/yd_05.png) no-repeat 1.8rem center;
+  background-size: 0.48rem;
+  margin:0 auto;
+  font-size: 0.36rem;
+  color: #fff;
+  line-height: 0.8rem;
+  padding-left: 2.4rem;
+  display: none;
+}
+.s2-titl{
+  background-color: #2669a8;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.s7-wrap{
+  width: 90%;
+  margin: 0 auto;
+}
+.s7-subt{
+  font-size: 16px;
+  padding: 10px 0 5px;
+  color: #000;
+}
+.s7-select p{
+  width: 45%;
+  margin-top: 8px;
+  float: left;
+}
+.s7-select span{
+  margin-left: 10px;
+  font-size: 16px;
+  float: left;
+}
+.s7-select input{
+  float: left;
+  margin-top: 5px;
+}
+.iframe-wrapper{
+  height: 115px;
+  margin-top: 10px;
+}
+.copyright{
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  padding: 10px 0;
+}

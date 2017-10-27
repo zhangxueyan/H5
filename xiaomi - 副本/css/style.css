@@ -56,7 +56,6 @@
 	height: 120px;
 	background: #264693  url(../images/xm_01.jpg) no-repeat center;
 	background-size: 1226px;
-	display: none;
 }
 .site-topbar{
 	background: #333;
@@ -129,18 +128,39 @@ nav{
     position: absolute;
     left: 0;
     top: 100px;
-}
-.nav-container{
-	position: relative;
+    display: none;
 }
 .nav-item{
 	float: left;
+	position: relative;
 }
 .nav-children{
     position: absolute;
-    left: 0px;
     top: 100px;
+    display: none;
 }
+.nav-children1{
+    left: -227px;
+}
+.nav-children2{
+    left: -311px;
+}
+.nav-children3{
+    left: -363px
+}
+.nav-children4{
+    left: -431px;
+}
+.nav-children5{
+left: -483px;
+}
+.nav-children7{
+left: -587px;
+}
+.nav-children8{
+    left: -655px;
+}
+
 .nav-list{
 	float: left;
 	margin-left: 170px;

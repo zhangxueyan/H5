@@ -11,6 +11,7 @@
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
   <script type="text/javascript" src="js/vue.min.js"></script>
+  <script type="text/javascript" src="js/basic.js"></script>
   <script type="text/javascript" src="js/data.js"></script>
 </head>
 <body>
@@ -46,28 +47,305 @@
   </div>
   <!-- site-topbar ending -->
   <nav>
-    <div class="nav-full" v-if="isShowFull"></div>
-    <div class="container nav-container clearfix">
-        <a href="javascript:;" class="xm-logo">
-          <img src="images/xm_02.jpg" alt="小米logo">
-        </a>
+    <div class="nav-full"></div>
+    <div class="container clearfix">
+        <a href="javascript:;" class="xm-logo"><img src="images/xm_02.jpg" alt="小米logo"></a>
         <ul class="nav-list clearfix">
-         <li class="nav-item" v-for="item in obj" v-on:mouseenter="showNavChild(item)" v-on:mouseleave="HideNavChild(item)">
-           <a href="javascript:;">{{item.cate}}</a>
-            <div class="nav-children" v-if="item.isShow">
+         <li class="nav-item">
+           <a href="javascript:;">{{message}}</a>
+            <div class="nav-children nav-children1">
               <div class="container">
                <ul class="children-list clearfix">
-                 <li class="children-item" v-for="itemChild in item.cateChild">
-                   <p class="child-new" v-if="itemChild.isNew">新品</p>
+                 <li class="children-item">
+                   <p class="child-new">新品</p>
                    <div class="child-pic no-border">
                     <img src="images/xm_03.png" alt="">
                    </div>
-                   <p class="child-name">{{itemChild.name}}</p>
-                   <p class="child-price">{{itemChild.price}}起</p>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
                  </li>
                </ul>
              </div>
             </div>
+         </li>
+         <li class="nav-item">
+           <a href="javascript:;">红米</a>
+           <div class="nav-children nav-children2">
+              <div class="container">
+               <ul class="children-list clearfix">
+                 <li class="children-item">
+                   <p class="child-new">新品2</p>
+                   <div class="child-pic no-border">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品2</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品2</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品2</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+               </ul>
+             </div>
+            </div>
+         </li>
+         <li class="nav-item">
+           <a href="javascript:;">笔记本</a>
+           <div class="nav-children nav-children3">
+              <div class="container">
+               <ul class="children-list clearfix">
+                 <li class="children-item">
+                   <p class="child-new">新品3</p>
+                   <div class="child-pic no-border">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品3</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品3</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品3</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </li>
+         <li class="nav-item">
+           <a href="javascript:;">电视</a>
+            <div class="nav-children nav-children4">
+              <div class="container">
+               <ul class="children-list clearfix">
+                 <li class="children-item">
+                   <p class="child-new">新品</p>
+                   <div class="child-pic no-border">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+               </ul>
+             </div>
+            </div>
+         </li>
+         <li class="nav-item">
+           <a href="javascript:;">盒子</a>
+           <div class="nav-children nav-children5">
+              <div class="container">
+               <ul class="children-list clearfix">
+                 <li class="children-item">
+                   <p class="child-new">新品2</p>
+                   <div class="child-pic no-border">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品2</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品2</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品2</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+               </ul>
+             </div>
+            </div>
+         </li>
+         <li class="nav-item">
+           <a href="javascript:;">新品</a>
+         </li>
+         <li class="nav-item">
+           <a href="javascript:;">路由器</a>
+            <div class="nav-children nav-children7">
+              <div class="container">
+               <ul class="children-list clearfix">
+                 <li class="children-item">
+                   <p class="child-new">新品</p>
+                   <div class="child-pic no-border">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+               </ul>
+             </div>
+            </div>
+         </li>
+         <li class="nav-item">
+           <a href="javascript:;">智能硬件</a>
+           <div class="nav-children nav-children8">
+              <div class="container">
+               <ul class="children-list clearfix">
+                 <li class="children-item">
+                   <p class="child-new">新品2</p>
+                   <div class="child-pic no-border">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品2</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品2</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+                 <li class="children-item">
+                   <p class="child-new">新品2</p>
+                   <div class="child-pic">
+                    <img src="images/xm_03.png" alt="">
+                   </div>
+                   <p class="child-name">小米</p>
+                   <p class="child-price">3299起</p>
+                 </li>
+               </ul>
+             </div>
+            </div>
+         </li>
+         <li class="nav-item">
+           <a href="javascript:;">服务</a>
+         </li>
+         <li class="nav-item">
+           <a href="javascript:;">社区</a>
          </li>
         </ul>
     </div>
@@ -737,5 +1015,6 @@
     </div>
   </div>  
 </div>
+
 </body>
 </html>
