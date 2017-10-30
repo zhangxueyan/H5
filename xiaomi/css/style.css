@@ -6,6 +6,9 @@
 .no-ml{
 	margin-left: 0!important;
 }
+.noml{
+	margin-left: 0!important;
+}
 .no-mt{
 	margin-top: 0!important;
 }
@@ -136,6 +139,9 @@ nav{
 .nav-item{
 	float: left;
 }
+.nav-item.active>a{
+  color: #ff6700;
+}
 .nav-children{
     position: absolute;
     left: 0px;
@@ -219,19 +225,16 @@ nav{
 	background: #ff6700;
 }
 .cate-children{
-    width: 790px;
     height: 460px;
-    border: 1px solid red;
+    border: 1px solid #ccc;
     background: #fff;
-    padding: 25px 20px 25px 0;
+    padding: 25px;
     position: absolute;
     left: 235px;
     top: 0;
-    display: none;
 }
 .children-col{
 	width: 250px;
-	padding-left: 25px;
 }
 .children-name{
 	font-size: 16px;
@@ -336,6 +339,21 @@ nav{
 	float: left;
 	margin-left: 14px;
 }
+.curBor1{
+	border-top:1px solid #ffac12;
+}
+.curBor2{
+	border-top:1px solid #83c44e;
+}
+.curBor3{
+	border-top:1px solid #2195f3;
+}
+.curBor4{
+	border-top:1px solid #e53935;
+}
+.curBor5{
+	border-top:1px solid #00c0a5;
+}
 .s1-li a{
 	padding-top: 30px;
 }
@@ -349,21 +367,6 @@ nav{
    color: #000;
    text-align: center;
    line-height: 24px;
-}
-.s1-li1{
-	border-top:1px solid #ffac12;
-}
-.s1-li2{
-	border-top:1px solid #83c44e;
-}
-.s1-li3{
-	border-top:1px solid #2195f3;
-}
-.s1-li4{
-	border-top:1px solid #e53935;
-}
-.s1-li5{
-	border-top:1px solid #00c0a5;
 }
 .s1-arrows{
 	width: 70px;
@@ -464,8 +467,9 @@ nav{
 	float: left;
 	text-align: center;
 	line-height: 40px;
+	border: 1px solid red;
 }
-.s2-tabs a.active{
+.s2-tabs a.active2{
 	color: red;
 }
 .s2-div{

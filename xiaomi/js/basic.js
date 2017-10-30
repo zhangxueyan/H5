@@ -1,31 +1,4 @@
   $(function(){
-    var $nav_item = $(".nav-item");
-    var $nav_full = $(".nav-full");
-    $nav_item.hover(function(){
-    	var $nav_children = $(this).find(".nav-children");
-    	if($nav_children.length){
-         $nav_children.toggle()
-         $nav_full.toggle()
-    	}
-    })
-    // nav ending
-    var mySwiper1 = new Swiper ('.swiper-container1', {
-    	initialSlide :2,
-    	loop: true,
-    	effect : 'fade',
-        pagination: '.swiper-pagination',
-        // 如果需要前进后退按钮
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        autoplayDisableOnInteraction : false,
-        paginationClickable :true
-    })
-    //banner 侧边类目 交互
-    var $side_cate= $(".side-cate");
-    $side_cate.hover(function(){
-    	var $cate_children = $(this).find(".cate-children");
-    	$cate_children.toggle()
-    })
     //s0鼠标经过交互
     var $s0_promo = $(".s0-promo");
     $s0_promo.hover(function(){

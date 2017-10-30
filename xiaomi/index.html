@@ -19,28 +19,16 @@
   <div class="site-topbar">
     <div class="container clearfix">
       <div class="topbar-nav clearfix fl">
-        <a href="javascript:;" class="no-border">小米商城</a>
-        <a href="javascript:;">MUI</a>
-        <a href="javascript:;">米聊</a>
-        <a href="javascript:;">游戏</a>
-        <a href="javascript:;">多看阅读</a>
-        <a href="javascript:;">云服务</a>
-        <a href="javascript:;">金融</a>
-        <a href="javascript:;">米币</a>
-        <a href="javascript:;">小米商城手机版</a>
-        <a href="javascript:;">问题反馈</a>
-        <a href="javascript:;">select Region</a>
+        <a href="javascript:;" v-for="headNav in headNavs">{{headNav}}</a>
       </div>
       <div class="topbar-cart fr">
-        <a href="javascript:;"><i></i>购物车(<span class="cart-num">0</span>)</a>
+        <a href="javascript:;">购物车(<span class="cart-num">0</span>)</a>
         <div class="cart-menu">
           <p>购物车中还没有商品，请赶快选购吧！</p>
         </div>
       </div>
       <div class="topbar-info fr">
-        <a href="javascript:;">登录</a>
-        <a href="javascript:;">注册</a>
-        <a href="javascript:;">消息通知</a>
+        <a href="javascript:;" v-for="regInfo in regInfos">{{regInfo}}</a>
       </div>
     </div>
   </div>
@@ -52,18 +40,18 @@
           <img src="images/xm_02.jpg" alt="小米logo">
         </a>
         <ul class="nav-list clearfix">
-         <li class="nav-item" v-for="item in obj" v-on:mouseenter="showNavChild(item)" v-on:mouseleave="HideNavChild(item)">
-           <a href="javascript:;">{{item.cate}}</a>
-            <div class="nav-children" v-if="item.isShow">
+         <li class="nav-item" v-for="navInfo in navInfos" v-on:mouseenter="showNavChild(navInfo)" v-on:mouseleave="hideNavChild(navInfo)" :class='{active:navInfo.isActive}'>
+           <a href="javascript:;">{{navInfo.cate}}</a>
+            <div class="nav-children" v-if="navInfo.isShow">
               <div class="container">
                <ul class="children-list clearfix">
-                 <li class="children-item" v-for="itemChild in item.cateChild">
-                   <p class="child-new" v-if="itemChild.isNew">新品</p>
+                 <li class="children-item" v-for="navInfoChild in navInfo.cateChild">
+                   <p class="child-new" v-if="navInfoChild.isNew">新品</p>
                    <div class="child-pic no-border">
                     <img src="images/xm_03.png" alt="">
                    </div>
-                   <p class="child-name">{{itemChild.name}}</p>
-                   <p class="child-price">{{itemChild.price}}起</p>
+                   <p class="child-name">{{navInfoChild.name}}</p>
+                   <p class="child-price">{{navInfoChild.price}}起</p>
                  </li>
                </ul>
              </div>
@@ -76,224 +64,16 @@
   <div class="site-banner">
     <div class="container banner-container">
      <ul class="side-cates">
-       <li class="side-cate">
-         <a href="javascript:;">手机 电话卡</a>
-         <div class="cate-children clearfix">
+       <li class="side-cate" v-for="banNav in banNavs" v-on:mouseenter="showBanChild(banNav)" v-on:mouseleave="hideBanChild(banNav)">
+         <a href="javascript:;">{{banNav.cate}}</a>
+         <div class="cate-children clearfix" v-if="banNav.isShow">
            <ul class="children-col children-col01 fl">
-             <li class="clearfix no-mt">
+             <li class="clearfix no-mt" v-for="banChild in banNav.cateChild">
                <div class="children-pic fl">
                 <img src="images/xm_01.png" alt="成人学历教育">
                </div>
-               <p class="children-name fl">小米5s</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米5s</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米5s</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-           </ul>
-           <ul class="children-col children-col02 fl">
-             <li class="clearfix no-mt">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米5s</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米5s</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米5s</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-           </ul>
-           <ul class="children-col children-col03 fl">
-             <li class="clearfix no-mt">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米5s</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米5s</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米5s</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-           </ul>
-         </div>
-       </li>
-       <li class="side-cate">
-         <a href="javascript:;">笔记本</a>
-         <div class="cate-children clearfix">
-           <ul class="children-col children-col01 fl">
-             <li class="clearfix no-mt">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米Note3</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米Note3</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米Note3</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-           </ul>
-           <ul class="children-col children-col02 fl">
-             <li class="clearfix no-mt">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米Note3</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米Note3</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米Note3</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-           </ul>
-           <ul class="children-col children-col03 fl">
-             <li class="clearfix no-mt">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米Note3</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米Note3</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">小米Note3</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-           </ul>
-         </div>
-       </li>
-       <li class="side-cate">
-         <a href="javascript:;">电视盒子</a>
-         <div class="cate-children clearfix">
-           <ul class="children-col children-col01 fl">
-             <li class="clearfix no-mt">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">红米5A</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">红米5A</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">红米5A</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-           </ul>
-           <ul class="children-col children-col02 fl">
-             <li class="clearfix no-mt">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">红米5A</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">红米5A</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">红米5A</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-           </ul>
-           <ul class="children-col children-col03 fl">
-             <li class="clearfix no-mt">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">红米5A</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">红米5A</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
-             </li>
-             <li class="clearfix">
-               <div class="children-pic fl">
-                <img src="images/xm_01.png" alt="成人学历教育">
-               </div>
-               <p class="children-name fl">红米5A</p>
-               <a href="javascript:;" class="children-btn fr">选购</a>
+               <p class="children-name fl">{{banChild.name}}</p>
+               <a href="javascript:;" class="children-btn fr">选购1</a>
              </li>
            </ul>
          </div>
@@ -301,9 +81,9 @@
      </ul>
      <div class="swiper-container swiper-container1">
        <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/xm_03.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="images/xm_04.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="images/xm_05.jpg" alt=""></div>
+        <div class="swiper-slide" v-for="banPic in banPics">
+          <img :src="banPic.imgUrl" alt="成人学历教育">
+        </div>
        </div>
        <!-- 如果需要分页器 -->
        <div class="swiper-pagination"></div>
@@ -325,14 +105,10 @@
         <a href="javascript:;"><i class="iconfont icon-huafeichongzhi"></i>话费充值</a>
       </div>
       <ul class="s0-promos fr clearfix">
-        <li class="s0-promo">
-          <a href="javascript:;"><img src="images/xm_07.jpg" alt="成人学历教育"></a>
-        </li>
-        <li class="s0-promo">
-          <a href="javascript:;"><img src="images/xm_07.jpg" alt="成人学历教育"></a>
-        </li>
-        <li class="s0-promo">
-          <a href="javascript:;"><img src="images/xm_07.jpg" alt="成人学历教育"></a>
+        <li class="s0-promo" v-for="s0Pic in s0Pics">
+          <a href="javascript:;">
+            <img :src="s0Pic.imgUrl" alt="成人学历教育">
+          </a>
         </li>
       </ul>
     </div>
@@ -343,90 +119,18 @@
       <h1 class="s-titl s1-titl">小米明星单品</h1>
       <div class="swiper-container swiper-container2">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide" v-for="s1Info in s1Infos">
             <ul class="s1-ul clearfix">
-              <li class="s1-li no-ml s1-li1">
+              <li class="s1-li s1-li1" v-for="s1Child in s1Info.s1Childs" 
+              :class="{noml:s1Child.noMl,
+              curBor1:s1Child.type ==='type1',curBor2:s1Child.type === 'type2',
+              curBor3:s1Child.type ==='type3',curBor4:s1Child.type === 'type4',
+              curBor5:s1Child.type ==='type5'}">
                 <a href="javascript:;">
-                  <img src="images/xm_08.jpg" alt="xm">
-                  <p>小米note3</p>
-                  <p>1600万美颜自拍，2倍变焦双摄</p>
-                  <p>2499起</p>
-                </a>
-              </li>
-              <li class="s1-li s1-li2">
-                <a href="javascript:;">
-                  <img src="images/xm_08.jpg" alt="xm">
-                  <p>小米note3</p>
-                  <p>1600万美颜自拍，2倍变焦双摄</p>
-                  <p>2499起</p>
-                </a>
-              </li>
-              <li class="s1-li s1-li3">
-                <a href="javascript:;">
-                  <img src="images/xm_08.jpg" alt="xm">
-                  <p>小米note3</p>
-                  <p>1600万美颜自拍，2倍变焦双摄</p>
-                  <p>2499起</p>
-                </a>
-              </li>
-              <li class="s1-li s1-li4">
-                <a href="javascript:;">
-                  <img src="images/xm_08.jpg" alt="xm">
-                  <p>小米note3</p>
-                  <p>1600万美颜自拍，2倍变焦双摄</p>
-                  <p>2499起</p>
-                </a>
-              </li>
-              <li class="s1-li s1-li5">
-                <a href="javascript:;">
-                  <img src="images/xm_08.jpg" alt="xm">
-                  <p>小米note3</p>
-                  <p>1600万美颜自拍，2倍变焦双摄</p>
-                  <p>2499起</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="swiper-slide">
-            <ul class="s1-ul clearfix">
-              <li class="s1-li no-ml s1-li1">
-                <a href="javascript:;">
-                  <img src="images/xm_08.jpg" alt="xm">
-                  <p>小米note3</p>
-                  <p>1600万美颜自拍，2倍变焦双摄</p>
-                  <p>2499起</p>
-                </a>
-              </li>
-              <li class="s1-li s1-li2">
-                <a href="javascript:;">
-                  <img src="images/xm_08.jpg" alt="xm">
-                  <p>小米note3</p>
-                  <p>1600万美颜自拍，2倍变焦双摄</p>
-                  <p>2499起</p>
-                </a>
-              </li>
-              <li class="s1-li s1-li3">
-                <a href="javascript:;">
-                  <img src="images/xm_08.jpg" alt="xm">
-                  <p>小米note3</p>
-                  <p>1600万美颜自拍，2倍变焦双摄</p>
-                  <p>2499起</p>
-                </a>
-              </li>
-              <li class="s1-li s1-li4">
-                <a href="javascript:;">
-                  <img src="images/xm_08.jpg" alt="xm">
-                  <p>小米note3</p>
-                  <p>1600万美颜自拍，2倍变焦双摄</p>
-                  <p>2499起</p>
-                </a>
-              </li>
-              <li class="s1-li s1-li5">
-                <a href="javascript:;">
-                  <img src="images/xm_08.jpg" alt="xm">
-                  <p>小米note3</p>
-                  <p>1600万美颜自拍，2倍变焦双摄</p>
-                  <p>2499起</p>
+                  <img :src="s1Child.imgUrl" alt="xm">
+                  <p>{{s1Child.name}}</p>
+                  <p>{{s1Child.desc}}</p>
+                  <p>{{s1Child.price}}起</p>
                 </a>
               </li>
             </ul>
@@ -452,281 +156,19 @@
           <img src="images/xm_09.jpg" alt="">
         </a>
         <div class="s2-tabs clearfix">
-            <a href="javascript:;" class="active">热门</a>
-            <a href="javascript:;">电视影音</a>
-            <a href="javascript:;">电脑</a>
-            <a href="javascript:;">家居</a>
+            <a href="javascript:;" v-for="s2Tab in s2Infos.s2Tabs" 
+            :class="{active2:s2Tab.isActive}">{{s2Tab.cate}}</a>
         </div>
         <div class="swiper-container swiper-container3">
            <div class="swiper-wrapper">
-             <div class="swiper-slide">
+             <div class="swiper-slide" v-for="s2Box in s2Infos.s2Divs">
               <ul class="s2-ul clearfix">
-                <li class="s2-li no-mt">
+                <li class="s2-li no-mt" v-for="s2Child in s2Box.s2Div">
                   <a href="javascript:;">
                     <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">第一屏小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-              </ul>
-             </div>
-             <div class="swiper-slide">
-              <ul class="s2-ul clearfix">
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">第二屏小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-              </ul>
-             </div>
-             <div class="swiper-slide">
-              <ul class="s2-ul clearfix">
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">第三屏小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-              </ul>
-             </div>
-             <div class="swiper-slide">
-              <ul class="s2-ul clearfix">
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">第四屏小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li no-mt">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
-                  </a>
-                </li>
-                <li class="s2-li">
-                  <a href="javascript:;">
-                    <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">小米笔记本Air 13.3" i7处理器</p>
-                    <p class="s2-desc">Intel酷睿i7处理器，8GB内存+256GB</p>
-                    <p class="s2-price">5999元</p>
+                    <p class="s2-name">{{s2Child.name}}</p>
+                    <p class="s2-desc">{{s2Child.desc}}</p>
+                    <p class="s2-price">{{s2Child.price}}元</p>
                   </a>
                 </li>
               </ul>
@@ -735,7 +177,7 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 </div>
 </body>
 </html>
