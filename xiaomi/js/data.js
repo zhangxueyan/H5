@@ -3,6 +3,7 @@ window.onload=function(){
         el: '#app',
         data: {
            message: 'Hello',
+           _mySwiper3:'',
            navInfos:[
              {
               cate:'小米手机',
@@ -11,11 +12,13 @@ window.onload=function(){
               cateChild:[
                {
                  isNew: true,
+                 noBorder:true,
                  name: "小米MIX2",
                  price: 3299
                },
                {
                  isNew: true,
+                 noBorder:false,
                  name: "小米Note3",
                  price: 2499
                }
@@ -28,11 +31,13 @@ window.onload=function(){
               cateChild:[
                 {
                  isNew: true,
+                 noBorder:true,
                  name: "红米5A",
                  price: 3299
                 },
                 {
                  isNew: true,
+                 noBorder:false,
                  name: "红米4X",
                  price: 3299
                 }
@@ -45,11 +50,13 @@ window.onload=function(){
               cateChild:[
                 {
                  isNew: true,
+                 noBorder:true,
                  name: "小米笔记本12.5",
                  price: 3299
                 },
                 {
                  isNew: true,
+                 noBorder:false,
                  name: "小米笔记本13.5",
                  price: 3299
                 }
@@ -62,11 +69,13 @@ window.onload=function(){
               cateChild:[
                 {
                  isNew: true,
+                 noBorder:true,
                  name: "小米电视4",
                  price: 3299
                 },
                 {
                  isNew: true,
+                 noBorder:false,
                  name: "小米电视4A",
                  price: 3299
                 }
@@ -79,11 +88,13 @@ window.onload=function(){
               cateChild:[
                 {
                  isNew: true,
+                 noBorder:true,
                  name: "小米盒子3A",
                  price: 3299
                 },
                 {
                  isNew: true,
+                 noBorder:false,
                  name: "小米盒子3S",
                  price: 3299
                 }
@@ -100,11 +111,13 @@ window.onload=function(){
               cateChild:[
                 {
                  isNew: true,
+                 noBorder:true,
                  name: "小米路由3A",
                  price: 3299
                 },
                 {
                  isNew: true,
+                 noBorder:false,
                  name: "小米路由3G",
                  price: 3299
                 }
@@ -117,11 +130,13 @@ window.onload=function(){
               cateChild:[
                 {
                  isNew: true,
+                 noBorder:true,
                  name: "小米无人机",
                  price: 3299
                 },
                 {
                  isNew: true,
+                 noBorder:false,
                  name: "小米手环",
                  price: 3299
                 }
@@ -251,53 +266,127 @@ window.onload=function(){
               s2Divs:[
                 {
                  s2Div:[
-                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999}
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
                   ]
                 },
                 {
                  s2Div:[
-                   {name:'第2屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第2屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第2屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第2屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第2屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第2屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第2屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第2屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999}
-                 ]
+                   {name:'第2屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                  ]
                 },
                 {
                  s2Div:[
-                   {name:'第3屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第3屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第3屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第3屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第3屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第3屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第3屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第3屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999}
-                 ]
+                   {name:'第3屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                  ]
                 },
                 {
                  s2Div:[
-                   {name:'第4屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第4屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第4屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第4屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第4屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第4屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第4屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999},
-                   {name:'第4屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',price:5999}
-                 ]
+                   {name:'第4屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                   {name:'第1屏小米笔记本Air 13.3" i7处理器',desc:'Intel酷睿i7处理器，8GB内存+256GB',
+                   price:5999,NoMt:true,isNew:true,isFreeFreight:false,isShowEva:false,evaluate:'重要的事情说三遍,超爱客服妹妹',author:'顺其自然'},
+                  ]
                 }
              ]
+           },
+           s3Infos:{
+              s3Div1:[
+                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'},
+                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'},
+                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'},
+                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'}
+               ],
+              s3Div2:[
+                {cate:'MIUI 主题',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'},
+                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'},
+                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'},
+                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'}
+               ],
+              s3Div3:[
+                {cate:'游戏',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'},
+                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'},
+                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'},
+                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'}
+               ],
+              s3Div4:[
+                {cate:'应用',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'},
+                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'},
+                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'},
+                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                price:25.99,imgUrl:'./images/xm_06.jpg'}
+               ]
            }
         },
         beforeCreate:function(){
@@ -307,15 +396,16 @@ window.onload=function(){
         },
         created:function(){
          console.log("创建后")
-                   console.log(this.message)
-          console.log(this.$el) 
+         console.log(this.message)
+         console.log(this.$el)
         },
         beforeMount:function(){
           console.log("挂载前")
-                    console.log(this.message)
+          console.log(this.message)
           console.log(this.$el) 
         },
         mounted:function(){
+          console.log(this.s3Infos)
           //banner图轮播
           var mySwiper1 = new Swiper ('.swiper-container1', {
             initialSlide :2,
@@ -334,19 +424,39 @@ window.onload=function(){
             autoplayDisableOnInteraction : false
           })
           //s2鼠标经过显示对应的内容
-          // var $s2_tabs = $(".s2-tabs");
-          // var $s2_tab = $s2_tabs.find("a");
-          // var $slide = $(".swiper-container3").find(".swiper-slide");
           var mySwiper3 = new Swiper ('.swiper-container3', {
-             loop: true
+             effect : 'fade'
           })
-           // $s2_tab.mouseenter(function(){
-           //    var $item = $(this);
-           //    $s2_tab.removeClass("active")
-           //    $item.addClass("active")
-           //    var idx = $item.index();
-           //    mySwiper3.slideTo(idx, 1000, false);//切换到第一个slide，速度为1秒
-           //  })
+          this._mySwiper3 = mySwiper3
+          //s3鼠标经过显示对应的内容 共4个swiper 分别是4 5 6 7
+          var mySwiper4 = new Swiper ('.swiper-container4', {
+           pagination: '.swiper-pagination',
+           nextButton: '.swiper-button-next',
+           prevButton: '.swiper-button-prev',
+           autoplayDisableOnInteraction : false,
+           paginationClickable :true
+         })
+          var mySwiper5 = new Swiper ('.swiper-container5', {
+           pagination: '.swiper-pagination',
+           nextButton: '.swiper-button-next',
+           prevButton: '.swiper-button-prev',
+           autoplayDisableOnInteraction : false,
+           paginationClickable :true
+         })
+         var mySwiper6 = new Swiper ('.swiper-container6', {
+           pagination: '.swiper-pagination',
+           nextButton: '.swiper-button-next',
+           prevButton: '.swiper-button-prev',
+           autoplayDisableOnInteraction : false,
+           paginationClickable :true
+         })
+          var mySwiper7 = new Swiper ('.swiper-container7', {
+           pagination: '.swiper-pagination',
+           nextButton: '.swiper-button-next',
+           prevButton: '.swiper-button-prev',
+           autoplayDisableOnInteraction : false,
+           paginationClickable :true
+         })
         },
         beforeUpdate:function(){
            console.log("更新前")
@@ -381,9 +491,20 @@ window.onload=function(){
           hideBanChild:function(item){
             item.isShow= false
           },
-          // s2的滚动交互效果
-          slideTo:function(idx){
-            mySwiper3.slideTo(idx, 1000, false);//切换到第一个slide，速度为1秒
+          // s2
+          slideToPage:function(idx,s2Tab){
+            this._mySwiper3.slideTo(idx, 1000, false) //切换到第一个slide，速度为1秒
+            this.s2Infos.s2Tabs.forEach(function(item){
+                 item.isActive = false
+                 console.log(item)
+             })
+            s2Tab.isActive = true
+          },
+          showEva:function(item){
+             item.isShowEva = true
+          },
+          hideEva:function(item){
+             item.isShowEva = false
           }
         }
       })

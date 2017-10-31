@@ -47,7 +47,7 @@
                <ul class="children-list clearfix">
                  <li class="children-item" v-for="navInfoChild in navInfo.cateChild">
                    <p class="child-new" v-if="navInfoChild.isNew">新品</p>
-                   <div class="child-pic no-border">
+                   <div class="child-pic" :class={noborder:navInfoChild.noBorder}>
                     <img src="images/xm_03.png" alt="">
                    </div>
                    <p class="child-name">{{navInfoChild.name}}</p>
@@ -156,26 +156,164 @@
           <img src="images/xm_09.jpg" alt="">
         </a>
         <div class="s2-tabs clearfix">
-            <a href="javascript:;" v-for="s2Tab in s2Infos.s2Tabs" 
-            :class="{active2:s2Tab.isActive}">{{s2Tab.cate}}</a>
+            <a href="javascript:;" v-for="(s2Tab,index) in s2Infos.s2Tabs" 
+            :class="{active2:s2Tab.isActive}" v-on:mouseenter="slideToPage(index,s2Tab)">{{s2Tab.cate}}</a>
         </div>
         <div class="swiper-container swiper-container3">
            <div class="swiper-wrapper">
-             <div class="swiper-slide" v-for="s2Box in s2Infos.s2Divs">
+             <div class="swiper-slide" v-for="(s2Box,index) in s2Infos.s2Divs">
               <ul class="s2-ul clearfix">
-                <li class="s2-li no-mt" v-for="s2Child in s2Box.s2Div">
+                <li class="s2-li" v-for="s2Child in s2Box.s2Div" :class="{nomt:s2Child.noMt}"  v-on:mouseenter="showEva(s2Child)" v-on:mouseleave="hideEva(s2Child)">
+                  <span class="s2-sell s2-new" v-if="s2Child.isNew">新品</span>
+                  <span class="s2-sell s2-freeFreight" v-if="s2Child.isFreeFreight">免运费</span>
                   <a href="javascript:;">
                     <img src="images/xm_10.jpg" alt="">
-                    <p class="s2-name">{{s2Child.name}}</p>
-                    <p class="s2-desc">{{s2Child.desc}}</p>
-                    <p class="s2-price">{{s2Child.price}}元</p>
+                    <p class="s2-brief s2-name">{{s2Child.name}}</p>
+                    <p class="s2-brief s2-desc">{{s2Child.desc}}</p>
+                    <p class="s2-brief s2-price">{{s2Child.price}}元</p>
                   </a>
+                  <div class="s2-evaluate-div animated bounceInUp" v-if="s2Child.isShowEva">
+                    <p class="s2-evaluate">{{s2Child.evaluate}}</p>
+                    <p class="s2-author">来自于{{s2Child.author}}的评价</p>
+                  </div>
                 </li>
               </ul>
              </div>
            </div>
         </div>
       </div>
+    </div>
+  </div>
+  <!-- s2  ending -->
+  <div class="site-s3">
+    <div class="container">
+      <h1 class="s-titl">内容</h1>
+      <div class="s3-divs clearfix">
+        <div class="s3-div noml">
+          <div class="swiper-container swiper-container4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="s3Slide in s3Infos.s3Div1">
+                <div class="s3-slide">
+                  <p>{{s3Slide.cate}}</p>
+                  <p>{{s3Slide.name}}</p>
+                  <p>{{s3Slide.brief}}</p>
+                  <p>{{s3Slide.price}}</p>
+                  <div>
+                    <img src="images/xm_07.png" alt="成人学历教育">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="s3-div">
+          <div class="swiper-container swiper-container5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="s3Slide in s3Infos.s3Div2">
+                <div class="s3-slide">
+                  <p>{{s3Slide.cate}}</p>
+                  <p>{{s3Slide.name}}</p>
+                  <p>{{s3Slide.brief}}</p>
+                  <p>{{s3Slide.price}}</p>
+                  <div>
+                    <img src="images/xm_07.png" alt="成人学历教育">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="s3-div">
+          <div class="swiper-container swiper-container6">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="s3Slide in s3Infos.s3Div3">
+                <div class="s3-slide">
+                  <p>{{s3Slide.cate}}</p>
+                  <p>{{s3Slide.name}}</p>
+                  <p>{{s3Slide.brief}}</p>
+                  <p>{{s3Slide.price}}</p>
+                  <div>
+                    <img src="images/xm_07.png" alt="成人学历教育">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="s3-div">
+          <div class="swiper-container swiper-container7">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="s3Slide in s3Infos.s3Div4">
+                <div class="s3-slide">
+                  <p>{{s3Slide.cate}}</p>
+                  <p>{{s3Slide.name}}</p>
+                  <p>{{s3Slide.brief}}</p>
+                  <p>{{s3Slide.price}}</p>
+                  <div>
+                    <img src="images/xm_07.png" alt="成人学历教育">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- s3  ending -->
+  <div class="site-s4">
+    <div class="container">
+      <h1 class="s-titl">视频</h1>
+      <ul class="s4-ul">
+        <li class="s4-li noml">
+          <div>
+            <img src="images/xm_11.jpg" alt="成人学历教育">
+          </div>
+          <p>雷军与斯塔克打造全面屏2.0</p>
+          <p>一场关于小米MIX 2 极致工艺的巅峰对话</p>
+        </li>
+        <li class="s4-li">
+          <div>
+            <img src="images/xm_11.jpg" alt="成人学历教育">
+          </div>
+          <p>雷军与斯塔克打造全面屏2.0</p>
+          <p>一场关于小米MIX 2 极致工艺的巅峰对话</p>
+        </li>
+        <li class="s4-li">
+          <div>
+            <img src="images/xm_11.jpg" alt="成人学历教育">
+          </div>
+          <p>雷军与斯塔克打造全面屏2.0</p>
+          <p>一场关于小米MIX 2 极致工艺的巅峰对话</p>
+        </li>
+        <li class="s4-li">
+          <div>
+            <img src="images/xm_11.jpg" alt="成人学历教育">
+          </div>
+          <p>雷军与斯塔克打造全面屏2.0</p>
+          <p>一场关于小米MIX 2 极致工艺的巅峰对话</p>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
