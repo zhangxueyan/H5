@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css" type="text/css"/>
   <link rel="stylesheet" href="css/icon-font/iconfont.css" type="text/css"/>
-  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
   <script type="text/javascript" src="js/vue.min.js"></script>
   <script type="text/javascript" src="js/data.js"></script>
@@ -190,11 +189,11 @@
       <h1 class="s-titl">内容</h1>
       <div class="s3-divs clearfix">
         <div class="s3-div noml">
+          <h2 class="s3-titl">图书</h2>
           <div class="swiper-container swiper-container4">
             <div class="swiper-wrapper">
               <div class="swiper-slide" v-for="s3Slide in s3Infos.s3Div1">
                 <div class="s3-slide">
-                  <p>{{s3Slide.cate}}</p>
                   <p>{{s3Slide.name}}</p>
                   <p>{{s3Slide.brief}}</p>
                   <p>{{s3Slide.price}}</p>
@@ -212,11 +211,11 @@
           </div>
         </div>
         <div class="s3-div">
+          <h2 class="s3-titl">MIUI 主题</h2>
           <div class="swiper-container swiper-container5">
             <div class="swiper-wrapper">
               <div class="swiper-slide" v-for="s3Slide in s3Infos.s3Div2">
                 <div class="s3-slide">
-                  <p>{{s3Slide.cate}}</p>
                   <p>{{s3Slide.name}}</p>
                   <p>{{s3Slide.brief}}</p>
                   <p>{{s3Slide.price}}</p>
@@ -234,11 +233,11 @@
           </div>
         </div>
         <div class="s3-div">
+          <h2 class="s3-titl">游戏</h2>
           <div class="swiper-container swiper-container6">
             <div class="swiper-wrapper">
               <div class="swiper-slide" v-for="s3Slide in s3Infos.s3Div3">
                 <div class="s3-slide">
-                  <p>{{s3Slide.cate}}</p>
                   <p>{{s3Slide.name}}</p>
                   <p>{{s3Slide.brief}}</p>
                   <p>{{s3Slide.price}}</p>
@@ -256,11 +255,11 @@
           </div>
         </div>
         <div class="s3-div">
+          <h2 class="s3-titl">应用</h2>
           <div class="swiper-container swiper-container7">
             <div class="swiper-wrapper">
               <div class="swiper-slide" v-for="s3Slide in s3Infos.s3Div4">
                 <div class="s3-slide">
-                  <p>{{s3Slide.cate}}</p>
                   <p>{{s3Slide.name}}</p>
                   <p>{{s3Slide.brief}}</p>
                   <p>{{s3Slide.price}}</p>
@@ -284,38 +283,46 @@
   <div class="site-s4">
     <div class="container">
       <h1 class="s-titl">视频</h1>
-      <ul class="s4-ul">
-        <li class="s4-li noml">
-          <div>
-            <img src="images/xm_11.jpg" alt="成人学历教育">
+      <ul class="s4-ul clearfix">
+        <li class="s4-li" v-for="(item,index) in s4Infos" :class="{noml:item.noMl}">
+          <a href="javascript:;" @click="showVideo(item)">
+            <img :src="item.imgUrl" alt="成人学历教育">
+            <p>{{item.subt}}</p>
+            <p>{{item.brief}}</p>
+          </a>
+          <div class="s4-video animated bounceInUp" v-if="item.isShowVideo">
+             <video width="880" height="536" controls :poster="item.posterUrl">
+              <source :src="item.videoUrl" type="video/mp4">
+             </video>
+             <span class="s4-close" @click="hideVideo(item)">X</span>
           </div>
-          <p>雷军与斯塔克打造全面屏2.0</p>
-          <p>一场关于小米MIX 2 极致工艺的巅峰对话</p>
-        </li>
-        <li class="s4-li">
-          <div>
-            <img src="images/xm_11.jpg" alt="成人学历教育">
-          </div>
-          <p>雷军与斯塔克打造全面屏2.0</p>
-          <p>一场关于小米MIX 2 极致工艺的巅峰对话</p>
-        </li>
-        <li class="s4-li">
-          <div>
-            <img src="images/xm_11.jpg" alt="成人学历教育">
-          </div>
-          <p>雷军与斯塔克打造全面屏2.0</p>
-          <p>一场关于小米MIX 2 极致工艺的巅峰对话</p>
-        </li>
-        <li class="s4-li">
-          <div>
-            <img src="images/xm_11.jpg" alt="成人学历教育">
-          </div>
-          <p>雷军与斯塔克打造全面屏2.0</p>
-          <p>一场关于小米MIX 2 极致工艺的巅峰对话</p>
         </li>
       </ul>
     </div>
   </div>
+  <div class="full-mask animated bounceInUp" v-if="isShowMask">
+  </div>
+  <!-- s4  ending -->
+  <footer>
+    <div class="container">
+      <div class="fot-advs clearfix">
+        <a href="javascript:;" v-for="item in fotInfos.advs" :class="{noborder:item.noBorder,active3:item.isActive}" v-on:mouseenter="addStyle(item)" v-on:mouseleave="redStyle(item)">{{item.name}}</a>
+      </div>
+      <div class="fot-mid clearfix">
+        <div class="fot-navs clearfix">
+           <dl class="fot-dl" v-for="item in fotInfos.mid" :class="{noml:item.noMl}">
+             <dt class="fot-subt">{{item.subt}}</dt>
+             <dd class="fot-nav" v-for="child in item.navs"><a href="javascript:;">{{child.name}}</a></dd>
+           </dl>
+        </div>
+        <div class="fot-contact">
+          <p class="fot-tel">400-100-5678</p>
+          <p class="fot-time">周一至周日 8:00-18:00（仅收市话费）</p>
+          <p class="fot-cus">24小时在线客服</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
 </body>
 </html>

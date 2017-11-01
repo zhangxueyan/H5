@@ -152,6 +152,7 @@ window.onload=function(){
              },
            ],
            isShowFull:false,
+           isShowMask:false,
            headNavs:['小米商城','MUI','米聊','游戏','多看阅读','云服务','金融','米币','小米商城手机版','问题反馈','selectRegion'],
            regInfos:['登录','注册','消息通知'],
            banNavs:[
@@ -348,45 +349,100 @@ window.onload=function(){
            },
            s3Infos:{
               s3Div1:[
-                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'},
-                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'},
-                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'},
-                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'}
                ],
               s3Div2:[
-                {cate:'MIUI 主题',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'},
-                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'},
-                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'},
-                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'}
                ],
               s3Div3:[
-                {cate:'游戏',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'},
-                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'},
-                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'},
-                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'}
                ],
               s3Div4:[
-                {cate:'应用',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'},
-                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'},
-                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'},
-                {cate:'图书',name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
+                {name:"哈利·波特与被诅咒的孩子",brief:"“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！",
                 price:25.99,imgUrl:'./images/xm_06.jpg'}
                ]
+           },
+           s4Infos:[
+             {imgUrl:'./images/xm_11.jpg',subt:'雷军与斯塔克打造全面屏2.0',
+             brief:'一场关于小米MIX 2 极致工艺的巅峰对话',isShowVideo:false,
+             videoUrl:'./videos/shipin1.mp4',posterUrl:'./images/xm_12.jpg',noMl:true},
+             {imgUrl:'./images/xm_13.jpg',subt:'雷军与斯塔克打造全面屏2.0',
+             brief:'一场关于小米MIX 2 极致工艺的巅峰对话',isShowVideo:false,
+             videoUrl:'./videos/shipin2.mp4',posterUrl:'./images/xm_14.jpg',noMl:false},
+             {imgUrl:'./images/xm_11.jpg',subt:'雷军与斯塔克打造全面屏2.0',
+             brief:'一场关于小米MIX 2 极致工艺的巅峰对话',isShowVideo:false,
+             videoUrl:'./videos/shipin1.mp4',posterUrl:'./images/xm_12.jpg',noMl:false},
+             {imgUrl:'./images/xm_13.jpg',subt:'雷军与斯塔克打造全面屏2.0',
+             brief:'一场关于小米MIX 2 极致工艺的巅峰对话',isShowVideo:false,
+             videoUrl:'./videos/shipin2.mp4',posterUrl:'./images/xm_14.jpg',noMl:false}
+           ],
+           fotInfos:{
+              advs:[
+                {name:'预约维修服务',noBorder:true,isActive:false},
+                {name:'7天无理由退货',noBorder:false,isActive:false},
+                {name:'15天免费换货',noBorder:false,isActive:false},
+                {name:'满150元包邮',noBorder:false,isActive:false},
+                {name:'520余家售后网点',noBorder:false,isActive:false}
+              ],
+              mid:[
+               {
+                subt:'帮助中心',
+                noMl:true,
+                navs:[{name:'账户管理'},{name:'购物指南'},{name:'订单操作'}]
+               },
+               {
+                subt:'帮助中心',
+                noMl:false,
+                navs:[{name:'账户管理'},{name:'购物指南'},{name:'订单操作'}]
+               },
+               {
+                subt:'帮助中心',
+                noMl:false,
+                navs:[{name:'账户管理'},{name:'购物指南'},{name:'订单操作'}]
+               },
+               {
+                subt:'帮助中心',
+                noMl:false,
+                navs:[{name:'账户管理'},{name:'购物指南'},{name:'订单操作'}]
+               },
+               {
+                subt:'帮助中心',
+                noMl:false,
+                navs:[{name:'账户管理'},{name:'购物指南'},{name:'订单操作'}]
+               },
+               {
+                subt:'帮助中心',
+                noMl:false,
+                navs:[{name:'账户管理'},{name:'购物指南'},{name:'订单操作'}]
+               }
+              ]
            }
         },
         beforeCreate:function(){
@@ -505,6 +561,25 @@ window.onload=function(){
           },
           hideEva:function(item){
              item.isShowEva = false
+          },
+          //s4
+          showVideo:function(item){
+            item.isShowVideo =true
+            this.isShowMask=true
+          },
+          hideVideo:function(item){
+            item.isShowVideo =false
+            this.isShowMask=false
+          },
+          //footer
+          addStyle:function(item){
+            this.fotInfos.advs.forEach(function(item){
+              item.isActive = false
+            })
+             item.isActive =true
+          },
+          redStyle:function(item){
+            item.isActive =false
           }
         }
       })

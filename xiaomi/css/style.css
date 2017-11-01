@@ -523,9 +523,13 @@ nav{
     border: 1px solid #ccc;
     float: left;
     margin-left: 11px;
+    padding-top: 20px;
 }
-.s3-slide{
-	padding-top: 50px;
+.s3-titl{
+	font-size: 18px;
+	color: #000;
+	text-align: center;
+	line-height: 40px;
 }
 .s3-slide p{
 	font-size: 14px;
@@ -540,4 +544,103 @@ nav{
     line-height: 40px;
     float: left;
     margin-left: 10px;
+}
+.s4-li a{
+	color: #000;
+}
+.full-mask{
+	width: 100%;
+	height: 100%;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 1000;
+}
+.s4-video{
+    width: 882px;
+    height: 538px;
+	position: fixed;
+	left: 50%;
+	margin-left: -441px;
+	top:200px;
+	z-index: 2000;
+}
+.s4-close{
+	width: 50px;
+	height: 50px;
+	border: 1px solid red;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	right:0;
+	top:20px;
+	cursor: pointer;
+}
+.fot-advs{
+	padding: 30px 20px;
+	border-bottom: 1px solid #ccc;
+}
+.fot-advs a{
+	display: block;
+	width: 20%;
+	font-size: 14px;
+	color: #000!important;
+	text-align: center;
+	line-height: 30px;
+	border-left: 1px solid #ccc;
+	float: left;
+}
+a.active3{
+	color: #ff6700;
+}
+footer{
+	padding: 30px 0;
+}
+.fot-navs{
+	width: 860px;
+	float: left; 
+}
+.fot-dl{
+	width: 60px;
+	float: left;
+	margin-left:95px;
+}
+.fot-subt{
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+	line-height: 30px;
+}
+.fot-nav a{
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+	line-height: 30px;	
+}
+.fot-contact{
+    width: 250px;
+    float: right;
+    padding: 0 20px 0 50px;
+    border-left: 1px solid #ccc;
+    margin-top: 25px;
+    text-align: center;
+}
+.fot-tel{
+	font-size: 22px;
+	color: #ff6700;
+}
+.fot-time{
+	font-size: 12px;
+}
+.fot-cus{
+  width: 120px;
+  margin: 0 auto;
+  border: 1px solid #ff6700;
+  color: #ff6700;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
 }
