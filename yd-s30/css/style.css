@@ -1,0 +1,186 @@
+﻿@charset 'UTF-8';
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.no-ml{
+  margin-left:0!important;
+}
+.no-mt{
+  margin-top:0!important;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+html,body{
+  height: 100%;
+}
+body{
+  width:6.4rem;
+  margin:0 auto;
+  position: relative;
+}
+.swiper-container{
+ height: 100%;
+}
+.swiper-slide{
+  background:url("../images/yd_01.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 3.5rem;
+}
+.s-titl{
+  width: 6.0rem;
+  height: 1px;
+  background:#ffb617;
+  position: relative;
+  margin: 0 auto;
+}
+.s-titl span{
+  display: block;
+  width: 4rem;
+  background: #f2f3f7;
+  font-size: 0.34rem;
+  color: #ffb617;
+  text-align: center;
+  line-height: 0.6rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -2rem;
+  top:-0.3rem;
+}
+.s3-titl span{
+      width: 5rem;
+    margin-left: -2.5rem;
+}
+.s-subt{
+ font-size: 0.4rem;
+ color: #666666;
+ text-align: center;
+ line-height: 0.6rem;
+  margin-top: 0.4rem;
+  letter-spacing: 2px;
+}
+.s-subt span{
+   font-size: 0.6rem;
+   color: #ffb617;
+   font-weight: bold;
+}
+.page-con{
+  padding: 0 0.9rem;
+  margin-top: 0.4rem;
+}
+.page1-sel{
+  width:1.61rem;
+}
+.page1-icon{
+  width: 1.61rem;
+  height: 1.6rem;
+}
+.page1-sel1 .page1-icon{
+  background: url(../images/yd_02.png) no-repeat center;
+  background-size: contain;
+}
+.page1-sel2 .page1-icon{
+  background: url(../images/yd_03.png) no-repeat center;
+  background-size: contain;
+}
+.page-word{
+   font-size: 0.4rem;
+   color: #666666;
+  line-height: 0.84rem;
+}
+.page-btn{
+  display: inline-block;
+  width: 0.34rem;
+  height: 0.34rem;
+  border-radius: 50%;
+  border: 2px solid rgb( 83, 83, 83 );
+  margin-right: 3px;
+  vertical-align: middle;
+}
+/*page active style*/
+.page-sel.active .page-word{
+  color: #ffb617;
+}
+.page-sel.active .page-btn{
+  border: 2px solid #ffb617;
+  background: #ffb617;
+}
+.page1-sel1.active .page1-icon{
+  background: url(../images/yd_02_active.png) no-repeat center;
+  background-size: contain;
+}
+.page1-sel2.active .page1-icon{
+  background: url(../images/yd_03_active.png) no-repeat center;
+  background-size: contain;
+}
+/*page active style*/
+.s2-btn{
+  margin: 0.3rem auto 0;
+  width: 4.5rem;
+  height: 0.84rem;
+  background-color: rgb( 255, 0, 0 );
+  border-radius: 0.1rem;
+  font-size: 0.34rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.84rem;
+}
+.page3-word{
+   position: relative;
+   padding-left: 0.64rem;
+}
+.page3-word span{
+  display: block;
+  width: 0.44rem;
+  height: 0.44rem;
+  position: absolute;
+  left: 0;
+  top:0.2rem;
+}
+.page3-icon1{
+  background: url(../images/yd_04.png) no-repeat center;
+  background-size: contain;
+}
+.page3-icon2{
+  background: url(../images/yd_05.png) no-repeat center;
+  background-size: contain;
+}
+.page3-icon3{
+  background: url(../images/yd_06.png) no-repeat center;
+  background-size: contain;
+}
+.iframe-wrap{
+  height: 120px;
+}
+@keyframes tipmove{
+  0%{bottom:0.8rem;opacity:0}
+  50%{bottom:1.0rem;opacity:1}
+  100%{bottom:1.2rem;opacity:0}
+}
+@-webkit-keyframes tipmove{
+  0%{bottom:0.8rem;opacity:0}
+  50%{bottom:1.0rem;opacity:1}
+  100%{bottom:1.2rem;opacity:0}
+}
+.page-arrow{
+    display: block;
+    width: 0.48rem;
+    height: 0.36rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.24rem;
+    bottom: 0.8rem;
+    z-index: 9999;
+    background: url(../images/yd_07.png) no-repeat center;
+    background-size: contain;
+    animation: tipmove 1.5s infinite ease-in-out;
+    -webkit-animation: tipmove 1.5s infinite ease-in-out;
+    -moz-animation: tipmove 1.5s infinite ease-in-out;
+    -o-animation: tipmove 1.5s infinite ease-in-out;
+    -ms-animation: tipmove 1.5s infinite ease-in-out;
+}

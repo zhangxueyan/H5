@@ -1,0 +1,134 @@
+﻿@charset 'UTF-8';
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.no-ml{
+  margin-left:0!important;
+}
+.no-mt{
+  margin-top:0!important;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+body{
+  width:6.4rem;
+  margin:0 auto;
+  position: relative;
+}
+.s1{
+  padding-top: 0.3rem;
+}
+.s1-ul{
+  padding: 0 0.5rem;
+}
+.s1-li{
+  width: 1.6rem;
+  float: left;
+  margin-left: 0.3rem;
+}
+.s1-pic{
+  width: 0.7rem;
+  height: 0.76rem;
+  margin: 0 auto;
+}
+.s1-li p{
+  font-size: 0.24rem;
+  color: #000;
+  line-height: 0.6rem;
+  text-align: center;
+}
+.s-line{
+  display: block;
+  width: 0.8rem;
+  height: 1px;
+  background:#d80000;
+  margin: 0 auto;
+}
+.theme-red{
+  color: #d80000;
+  font-weight: bold;
+}
+.s1-txt{
+  padding: 0.2rem 0.5rem;
+  font-size: 0.2rem;
+  color: #000;
+  line-height: 0.6rem;
+}
+.iframe-wrap{
+  height: 120px;
+}
+.s2-ul{
+  padding: 0.2rem;
+  background: #f7f6f6;
+}
+.s2-pic{
+  width: 1.06rem;
+  margin-top: 0.2rem;
+}
+.s2-txt{
+  width: 4.5rem;
+  padding-left: 0.5rem;
+  border-left: 1px solid #ccc;
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+.s2-txt h3{
+  width: 1.5rem;
+  border-bottom: 1px solid #333;
+  font-size: 0.3rem;
+  color: #000;
+  text-align: center;
+  line-height: 0.6rem;
+}
+.s2-txt p{
+  font-size: 0.24rem;
+  color: #000;
+  line-height: 0.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.s2-cir{
+  display: block;
+  width: 14px;
+  height: 14px;;
+  padding: 2px;
+  background: #fff;
+  border:2px solid #d80000;
+  border-radius: 50%;
+  position: absolute;
+  left: -7px;
+  top:50%;
+  margin-top: -7px;
+}
+.s2-cir em{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #d80000;
+  border-radius: 50%;
+}
+.s2-con{
+    background: #f7f6f6; 
+}
+.s-titl{
+    font-size: 0.3rem;
+    color: #000;
+    line-height: 0.6rem;
+    text-align: center;
+}
+.iframe-option{
+  height: 350px;
+}
+.copyright{
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  padding: 10px 0;
+}
