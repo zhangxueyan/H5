@@ -1,10 +1,7 @@
 $(function(){
       var mySwiper = new Swiper ('.swiper-container', {
-            direction : 'vertical',
-            loop: true,
-            initialSlide :2
+            direction : 'vertical'
       });
-
       // page sel
       var $page_word = $(".page-word");
       $page_word.click(function(){
