@@ -1,0 +1,37 @@
+.button{
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  left: 40%;
+  top: 40%;
+  width: 200px;
+  perspective:400px;
+  background-color: transparent;
+}
+.button span{
+  display: block;
+  position: relative;
+  transition:0.3s ease-in-out all;
+  transform-origin:50% 0;
+  transform-style:preserve-3d;
+  background-color: #ff0000;
+  color: white;
+  width: 100%;
+
+}
+.button span:after{
+  display: block;
+  content: attr(data-title);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition:0.3s ease-in-out all;
+  transform-origin:50% 0;
+  transform:translate3d(0px,105%,0px) rotateX(-90deg);
+  background-color: #bf0101;
+  color: #fff;
+  width: 100%;
+}
+.button:hover span{
+  transform:translate3d(0px,0px,-30px) rotateX(90deg);
+}
