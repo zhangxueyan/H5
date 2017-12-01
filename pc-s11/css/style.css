@@ -33,7 +33,143 @@
   -moz-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
+.s-step3{
+  -webkit-animation-delay: 0.12s;
+  -ms-animation-delay: 0.12s;
+  -o-animation-delay: 0.12s;
+  -moz-animation-delay: 0.12s;
+  animation-delay: 0.12s;
+}
 /*animate css设置延迟时间*/
+/*悬浮框csss tart*/
+.suspend {
+  position: fixed;
+  z-index:1500;
+  width: 150px;
+  height: 500px;
+}
+.suspend-left{
+ background:url(../images/sh_48.png) no-repeat center;
+ padding-top: 70px;
+}
+.suspend-left p{
+ margin: 18px auto;
+ width: 130px;
+ font-size: 14px;
+ line-height: 32px;
+ text-align: center;
+ cursor: pointer;
+ position: relative;
+ left: 0;
+ transition: all 0.4s;
+}
+.sus-p1{
+color: rgb( 255, 255, 255 );
+ background:url(../images/sh_49.png) no-repeat center;
+}
+.sus-p2{
+  color: rgb( 0, 0, 0 );
+ background:url(../images/sh_50.png) no-repeat center;
+}
+.suspend-left p:hover{
+  left: 50px;
+}
+.suspend-right{
+ background:url(../images/sh_51.png) no-repeat center;
+ padding-top: 18px;
+}
+
+.suspend-right p{
+  width: 130px;
+  height: 42px;
+  background:url(../images/sh_52.png) no-repeat center;
+  font-size: 16px;
+  color: rgb( 0, 0, 0 );
+  line-height: 48px;
+  text-align: center;
+  margin: 10px auto 0;
+  cursor: pointer;
+  position: relative;
+}
+.suspend-right p:hover{
+  font-weight: bold;
+  color: rgb(158, 25, 27);
+}
+.suspend-close {
+  cursor: pointer;      
+  width: 30px;
+  height: 30px;
+  background: url(../images/sh_53.png) no-repeat center;
+  background-size: 17px;
+  position: absolute;
+}
+.suspend-closel{
+  top: 0;
+  right: -30px;
+}
+.suspend-closer{
+  top: -25px;
+  right: 0;
+}
+.suspend-right{
+  right: 5px;
+  top:130px;
+}
+.suspend-left{
+  left: 5px;
+  top:130px;
+}
+/*悬浮框css ending*/
+/*循环弹窗 start*/
+.popup{
+  width: 800px;
+  height: 500px;
+  position: fixed;
+  left: 50%;
+  margin-left: -400px;
+  top: 20%;
+  z-index: 9999;
+  display: none;
+}
+.popup{
+  background: url(../images/sh_54.jpg) no-repeat center;
+  padding: 105px 80px 65px;
+}
+.pop-li{
+  width: 170px;
+  height: 77px;
+  background: rgba(0,0,0,0.502);
+  font-size: 24px;
+  color: rgb( 255, 255, 255 );
+  line-height: 54px;
+  text-align: center;
+  float: left;
+  position: relative;
+  margin: 60px 0 0 40px; 
+}
+.pop-btn{
+    width: 100%;
+    background: url(../images/sh_55.png) no-repeat center;
+    font-size: 24px;
+    color: rgb( 0, 0, 0 );
+    text-align: center;
+    line-height: 46px;
+    position: absolute;
+    bottom: -23px;
+}
+.pop-btn:hover{
+   background: url(../images/sh_56.png) no-repeat center;
+       color: #9e191b;
+}
+.popup-close{
+      width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+        right: 0;
+    top: 0;
+}
+/*循环弹窗 ending*/
 .container{
   width: 1000px;
   margin:0 auto;
@@ -71,23 +207,12 @@
 }
 .slideDown {
   width: 100%;
-  background: #713c28;
+  padding-top: 32px;
+  background:url(../images/sh_00.png) no-repeat top;
   position: absolute;
   left: 0;
-  top: 90px;
+  top: 70px;
   display: none;
-}
-.slideDown:before{
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 14px solid transparent;
-  border-right: 14px solid transparent;
-  border-bottom: 12px solid #703b28;
-  position: absolute;
-  left: 50%;
-  margin-left:-14px;
-  top: -12px;
 }
 .slideDown a{
   font-size: 16px;
@@ -108,6 +233,11 @@
   border-left: 1px solid rgb( 255, 255, 255 );
   padding: 0 15px;
   text-align: center;
+  cursor: pointer;
+}
+.ban-way:hover{
+  text-decoration: underline;
+  color: #000;
 }
 .ban-pic{
   width: 748px;
@@ -116,12 +246,13 @@
 }
 .ban-items{
   padding: 0 170px;
-  margin: 80px auto 50px;
+  margin: 80px auto 0;
 }
 .ban-item{
   width: 150px;
   float: left;
   margin-left: 105px;
+  cursor: pointer;
 }
 .ban-icon{
   width: 84px;
@@ -135,8 +266,12 @@
   text-align: center;
   line-height: 48px;
 }
+.ban-item:hover p{
+ color: rgb(255, 218, 4);
+ text-shadow: 2px 3.464px 5px rgb(117, 107, 46);
+}
 .s-btn{
-  margin: 0 auto;
+  margin: 40px auto 0;
   width: 356px;
   height: 50px;
   border-radius: 10px;
@@ -145,6 +280,10 @@
   color: rgb( 255, 255, 255 );
   line-height:50px;
   text-align: center;
+  letter-spacing: 5px;
+}
+.s-btn:hover{
+  background-color: rgb(94, 56, 46);
 }
 .s0-items{
   padding: 10px 0 40px;
@@ -173,6 +312,7 @@
   color: rgb( 94, 56, 45 );
   font-weight: bold;
   text-align: center;
+  letter-spacing: 5px;
 }
 .s-yellow{
   color: #f16214;
@@ -281,6 +421,10 @@
   position: relative;
   margin-left: 50px;
 }
+.s2-li:hover{
+  background:#f8f8f8;
+  box-shadow: -2px 5px 15px #888888;
+}
 .s2-li1{
   padding: 10px 30px 50px;
 }
@@ -313,6 +457,9 @@
   left: 50%;
   margin-left: -100px;
   bottom: -20px;
+}
+.s2-li a:hover{
+  background: rgb( 94, 56, 45 );
 }
 .s3{
   background: url(../images/sh_07.jpg) no-repeat center;
@@ -375,6 +522,10 @@
   margin-left: -85px;
   bottom: 60px;
 }
+.s3-li:hover .s3-btn{
+  background: #Fff;
+  color: rgb( 241, 98, 20 );
+}
 .s4{
   background: rgb( 94, 56, 45 );
   padding: 80px 0 70px;
@@ -394,6 +545,10 @@
   display: inline-block;
   padding-right: 40px;
   position: relative;
+  cursor: pointer;
+}
+.s4-p:hover{
+  text-decoration: underline;
 }
 .s4-p span{
   width: 29px;
@@ -417,6 +572,7 @@
  text-align: center;
  letter-spacing: 5px;
  margin-top: 10px;
+   cursor: pointer;
 }
 .s4-items{
   margin-top: 12px;
@@ -430,6 +586,10 @@
   line-height: 40px;
   text-align: center;
   margin-top: 12px;
+}
+.s4-item:hover{
+  border: 1px solid rgb( 241, 98, 20 );
+  background-color: rgb( 94, 56, 45 );
 }
 .s4-titl{
   width: 260px;
@@ -446,159 +606,402 @@
    margin-left: -130px;
    top: -30px;
 }
-.政策通知 {
-  font-size: 28px;
-  font-family: "Microsoft YaHei";
-  color: rgb( 255, 255, 255 );
-  font-weight: bold;
-  line-height: 0.929;
-  text-align: justifyLeft;
-  position: absolute;
-  left: 885.703px;
-  top: 3230.91px;
-  z-index: 225;
+.s2-time{
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
 }
-
-
-.圆角矩形_7 {
-  border-width: 1px;
-  border-color: rgb( 94, 56, 45 );
-  border-style: solid;
-  border-radius: 10px;
-  background-color: rgb( 94, 56, 45 );
-  position: absolute;
-  left: 829px;
-  top: 3187px;
-  width: 259px;
-  height: 57px;
-  z-index: 224;
+.s2-time span{
+    display: inline-block;
+    width: 250px;
+    height: 289px;
+    background: url(../images/sh_14.png) no-repeat center;
+    font-size: 98px;
+    font-family: "Arial";
+    color: #6b6b6b;
+    font-weight: bold;
+    line-height: 280px;
 }
-
-
-.上海户口考生报名咨询入口 {
-  font-size: 19px;
-  font-family: "Microsoft YaHei";
-  color: rgb( 255, 255, 255 );
-  line-height: 1.632;
-  text-align: justifyLeft;
-  position: absolute;
-  left: 703px;
-  top: 3477.709px;
-  z-index: 235;
-}
-
-.矩形_9_拷贝 {
-  border-width: 1px;
-  border-color: rgb( 94, 56, 45 );
-  border-style: solid;
-  background-color: rgb( 241, 98, 20 );
-  position: absolute;
-  left: 679px;
-  top: 3435px;
-  width: 259px;
-  height: 39px;
-  z-index: 230;
-}
-
-
-.矩形_9 {
-  background-color: rgb( 94, 56, 45 );
-  position: absolute;
-  left: 679px;
-  top: 3360px;
-  width: 561px;
-  height: 51px;
-  z-index: 229;
-}
-
-
-.上海自学自学考试考生报名咨询入口 {
-  font-size: 22px;
-  font-family: "Microsoft YaHei";
-  color: rgb( 255, 255, 255 );
-  line-height: 1.409;
-  text-align: justifyLeft;
-  position: absolute;
-  left: 757px;
-  top: 3406.137px;
-  z-index: 234;
-}
-
-
-.》上海高等自学考试新增课程的规定_》关于调整上海高等教育自学考试部分专业调整的通知 {
+.s2-time em{
+  display: block;
+  width: 250px;
   font-size: 18px;
-  font-family: "Microsoft YaHei";
+  font-family: "Arial";
+  font-style: normal;
+  position: absolute;
+}
+.en-month{
+  color: rgb( 117, 117, 117 );
+  line-height: 30px;
+  bottom: 70px;
+  left: 248px;
+}
+.en-date{
+  color: rgb( 117, 117, 117 );
+  line-height: 30px;
+  bottom: 70px;
+  left: 503px;
+}
+.en-year1{
+  color: rgb( 255, 255, 255 );
+  line-height: 52px;
+  top: 20px;
+  left: 248px;
+}
+.en-year2{
+  color: rgb( 255, 255, 255 );
+  line-height: 52px;
+  top: 20px;
+  left: 503px;
+}
+.s5{
+  padding-top: 40px
+}
+.s5-iframe{
+   height: 100px;
+   background-color: rgb( 241, 98, 20 );
+   padding-top: 22px;
+   margin-top: 45px;
+}
+.iframe-wrap{
+  height: 100px;
+}
+.s6{
+  height: 600px;
+  padding: 40px 0 55px;
+  background: url(../images/sh_15.jpg) no-repeat center;
+  background-size: cover;
+}
+.s6-ul{
+  margin-top: 100px;
+}
+.s6-li{
+  width: 210px;
+  height: 260px;
+  background: url(../images/sh_20.png) no-repeat center;
+  position: relative;
+  padding-top: 50px;
+  float: left;
+  margin-left: 53px;
+  cursor: pointer;
+}
+.s6-icon{
+  display: block;
+  width: 93px;
+  height: 93px;
+  position: absolute;
+  left: 50%;
+  margin-left: -46px;
+  top: -40px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.s6-line{
+  background: #5e382d;
+  width: 30px;
+  margin-top: 10px;
+}
+.s6-p1{
+ font-size: 22px;
+ color: rgb( 94, 56, 45 );
+ line-height: 55px;
+ text-align: center;
+}
+.s6-p2{
+font-size: 20px;
+ color: rgb( 241, 98, 20 );
+  text-align: center;
+}
+.s6-p3{
+  font-size: 20px;
   color: rgb( 94, 56, 45 );
-  line-height: 1.722;
-  text-align: justifyLeft;
-  position: absolute;
-  left: 682.25px;
-  top: 3315.566px;
-  z-index: 226;
+  text-align: center;
+  margin-top: 10px;
 }
-
-
-.圆角矩形_6 {
-  border-radius: 10px;
-  background-color: rgb( 255, 255, 255 );
-  box-shadow: 3.5px 6.062px 9px 0px rgb( 60, 13, 0 );
-  position: absolute;
-  left: 544px;
-  top: 3222px;
-  width: 831px;
-  height: 331px;
-  z-index: 223;
+.s6-p4{
+font-size: 22px;
+ color: rgb( 241, 98, 20 );
+  text-align: center;
+  line-height: 39px;
 }
-
-
-.矩形_8 {
+.s6-but{
+  width: 100%;
+  margin:0 auto;
   background-color: rgb( 94, 56, 45 );
+  font-size: 22px;
+  color: rgb( 255, 255, 255 );
+  line-height: 40px;
+  text-align: center;
   position: absolute;
-  left: 0px;
-  top: 3142px;
-  width: 1920px;
-  height: 481px;
-  z-index: 222;
+  bottom: 0;
+}
+.s6-li:hover .s6-but{
+  background: rgb( 241, 98, 20 );
+}
+.s6-li:hover .s6-icon{
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg)
+}
+.s6-li.active{
+  background: url(../images/sh_20_active.png) no-repeat center;
+}
+.s7{
+  background-color: rgb( 94, 56, 45 );
+  padding: 50px 0 40px;
+}
+.s7-dl{
+  border-bottom: 1px dashed #976f63;
+}
+.s7-dl dt{
+  width: 160px;
+  font-size: 20px;
+  color: rgb( 255, 217, 4 );
+  font-weight: bold;
+  line-height: 50px;
+  letter-spacing: 8px;
+  float: left;
+}
+.s7-dl dd{
+  width: 150px;
+  font-size: 20px;
+  color: rgb( 255, 255, 255 );
+  line-height: 50px;
+  float: left;
+  margin-left: 32px;
+  cursor: pointer;
+}
+.s7-dl dd:last-child{
+  width: 80px;
+  color: #ffd904;
+  text-align: right;
+}
+.s7-dl dd:hover{
+  color: #ffd904;
+}
+.s7-btn:hover{
+  background: #fff;
+  color: rgb( 241, 98, 20 );
+}
+.s8{
+  padding: 50px 0 40px;
+}
+.s8-items{
+  height: 360px;
+  padding: 0 80px;
+  background: url(../images/sh_21.png) no-repeat center 90px;
+  background-size: 980px;
+}
+.s8-item{
+ width: 190px;
+ height: 55px;
+ border-radius: 10px;
+ font-size: 24px;
+ color: rgb( 255, 255, 255 );
+ line-height:  55px;
+ text-align: center;
+ float: left;
+ margin: 64px 0 0 110px;
+}
+.s8-itemc1{
+background-color: rgb( 94, 56, 45 );
+}
+.s8-itemc2{
+background-color: #9f6c5d;
+}
+.s8-item:hover{
+  background-color: rgb( 241, 98, 20 );
+}
+.s8-ml{
+  margin-left: 20px;
+}
+.s8-ml2{
+  margin-left: 85px;
+}
+.s8-itemb{
+  width: 235px;
+}
+.s9{
+  padding: 35px 0 55px;
+  background: url(../images/sh_22.jpg) no-repeat center;
+  background-size: cover;
+}
+.s9-ul{
+  padding: 0 110px;
+}
+.s9-li{
+  width: 220px;
+  border: 1px solid rgb( 94, 56, 45 );
+  padding-top: 20px;
+  position: relative;
+  margin: 100px 0 0 60px;
+  float:left;
+  cursor: pointer;
+}
+.s9-li:hover p{
+ background: rgb( 94, 56, 45 );
+}
+.s9-li h3{
+  font-size: 28px;
+  color: rgb( 241, 98, 20 );
+   font-weight: bold;
+   text-align: center;
+   text-decoration: underline;
+}
+.s9-li h4{
+   font-size: 20px;
+  color: rgb( 94, 56, 45 );
+  text-align: center;
+  line-height: 60px;
+}
+.s9-li p{
+  background: rgb( 241, 98, 20 );
+ font-size: 22px;
+  color: rgb( 255, 255, 255 );
+  line-height: 40px;
+  text-align: center;
+  border-top: 1px solid rgb( 94, 56, 45 );
+}
+.s9-icon{
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  top: -70px;
+}
+.s10{
+  padding: 40px 0 55px;
+}
+.s10-li{
+  width: 230px;
+  margin: 30px 0 0 26px;
+  float: left;
+  cursor: pointer;
+}
+.s10-pic{
+  width: 162px;
+  height: 188px;
+  margin:0 auto;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+.s10-but{
+  width: 230px;
+  background-color: rgb( 94, 56, 45 );
+  border-radius: 5px;
+  font-size: 20px;
+  color: rgb( 255, 255, 255 );
+  line-height:40px;
+  margin-top: 15px;
+  text-align: center;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+.s10-li:hover .s10-pic{
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.s10-li:hover .s10-but{
+  background: rgb( 241, 98, 20 );
+}
+.s11{
+  background: url(../images/sh_06.jpg) no-repeat center;
+  background-size: cover;
+  padding: 40px 0 50px;
+}
+.s11-box{
+  width: 440px;
+  margin-top: 70px;
+}
+.s11-pic{
+  width: 77px;
+  height: 53px;
+  margin:0 auto;
+}
+.s11-subt{
+  font-size: 28px;
+  color: rgb( 94, 56, 45 );
+  font-weight: bold;
+  line-height: 56px;
+  text-align: center;
+}
+.s11-bran{
+  width: 302px;
+  height: 60px;
+  background: url(../images/sh_38.png) no-repeat center;
+  margin: 0 auto;
+}
+.s11-li{
+   width: 134px;
+   float: left;
+   position: relative;
+   margin-left: 18px;
+}
+.s11-icon{
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin:0 auto;
+  border: 2px dashed rgb( 94, 56, 45 );
+  border-radius: 50%;
 }
 
+.s11-but{
+  width: 100%;
+  background: #5e382d;
+  font-size: 18px;
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  bottom: -20px;
+}
+.s11-li:hover .s11-icon{
+  border: 2px dashed #f16214;
+}
+.s11-li:hover .s11-but{
+  background: #f16214;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.s11-btn{
+  margin-top: 100px;
+}
+.s12{
+  background: url(../images/sh_46.jpg) no-repeat center;
+  background-size: cover;
+}
+.s12-pic{
+  width: 949px;
+  height: 650px;
+  margin:0 auto;
+}
 footer{
-  display: none;
-  background: #ccc;
+  background: #383838;
   height: 80px;
   margin-bottom: 80px;
 }
 .copyright{
   font-size: 16px;
-  color: #000;
+  color: #fff;
   text-align: center;
   line-height: 80px;
 }
 /*box-fixed start*/
 .bot-fixed{
-  display: none;
   width: 100%;
   height: 80px;
   background: rgba(0,0,0,0.8);
